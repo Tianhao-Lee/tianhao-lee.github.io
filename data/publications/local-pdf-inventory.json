@@ -1,0 +1,829 @@
+{
+  "papers": [
+    {
+      "file": "He 等 - 2025 - BCDB A dual-branch network based on transformer for predicting transcription factor binding sites.pdf",
+      "bytes": 3331172,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1. The Overall Framework of BCDB. (A) The overall process for predicting transcription factor binding sites involves taking a DNA sequence as input, which"
+        },
+        {
+          "number": 2,
+          "page": 6,
+          "caption": "Fig. 2. Comparison of BCDB with seven other TFBSs prediction methods on 165 ChIP-seq datasets regarding ACC, ROC-AUC, and PR-AUC. The black line inside the"
+        },
+        {
+          "number": 3,
+          "page": 7,
+          "caption": "Fig. 3. Model Ablation (A) Diagram of BCDB model variants. A black circle indicates that the variant model possesses this module, while the absence of a black circle"
+        },
+        {
+          "number": 6,
+          "page": 8,
+          "caption": "Fig. 6. The resulting diagram of motif analysis for families such as CTCF, Cebpb, Jund, and FOS using TOMTOM, where the height of sequence stacking indicates the"
+        },
+        {
+          "number": 7,
+          "page": 9,
+          "caption": "Fig. 7. Cross-Cell Prediction (A) Overlap of TFs between GM12878, K562, Helas3, and Hepg2 cells. (B) Comparison of ROC-AUC between Cross-Cell Line Prediction"
+        }
+      ],
+      "images": [
+        {
+          "page": 1,
+          "num": 2,
+          "type": "image",
+          "width": 118,
+          "height": 117,
+          "color": "icc",
+          "xppi": 1684,
+          "yppi": 0,
+          "bytes": "254B"
+        }
+      ]
+    },
+    {
+      "file": "He 等 - 2025 - Distribution and Knowledge Alignment-based Single-cell Multi-omics Cell Type Annotation.pdf",
+      "bytes": 6669355,
+      "figures": [
+        {
+          "number": 2,
+          "page": 3,
+          "caption": "Fig. 2. The model employs a Transformer architecture to align scRNA-seq and scATAC-seq data. Sequence encoders extract features, which are aligned in"
+        },
+        {
+          "number": 4,
+          "page": 7,
+          "caption": "Fig. 4. Comparison of clustering scores between the original data and the shared integrated data across four datasets. The green line represents NMI, the"
+        }
+      ],
+      "images": [
+        {
+          "page": 5,
+          "num": 1,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 624,
+          "yppi": 0,
+          "bytes": "3110B"
+        },
+        {
+          "page": 5,
+          "num": 3,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 618,
+          "yppi": 0,
+          "bytes": "3110B"
+        },
+        {
+          "page": 5,
+          "num": 5,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 620,
+          "yppi": 0,
+          "bytes": "3110B"
+        },
+        {
+          "page": 5,
+          "num": 7,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 633,
+          "yppi": 0,
+          "bytes": "3110B"
+        },
+        {
+          "page": 5,
+          "num": 9,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 622,
+          "yppi": 0,
+          "bytes": "2580B"
+        },
+        {
+          "page": 5,
+          "num": 11,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 630,
+          "yppi": 0,
+          "bytes": "3110B"
+        }
+      ]
+    },
+    {
+      "file": "He 等 - 2026 - LEAP Long sequence enhancer activity analysis and prediction framework.pdf",
+      "bytes": 4063107,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1. Overview of the LEAP framework. (a) Sequence processing and prediction: Longer-range DNA sequences are utilized, followed by embedding through an"
+        },
+        {
+          "number": 2,
+          "page": 7,
+          "caption": "Fig. 2. Investigating the impact of sequence data on tasks under different scale scenarios. (a) The same data is used as input with different scale settings,"
+        },
+        {
+          "number": 4,
+          "page": 8,
+          "caption": "Fig. 4. Show the original LEAP model and two variant models (Leap-TS: Performer replaced with the traditional Transformer; LEAP-CNN: Stem Tower replaced"
+        },
+        {
+          "number": 6,
+          "page": 9,
+          "caption": "Fig. 6. Sequence motifs were extracted from five cell types in the DNA-LM module’s attention layer. Two high-score motifs per cell type were selected, with"
+        },
+        {
+          "number": 7,
+          "page": 10,
+          "caption": "Fig. 7. Three-panel integrated visualization quantifies the importance of each nucleotide position in the enhancer sequence."
+        },
+        {
+          "number": 8,
+          "page": 11,
+          "caption": "Fig. 8. LEAP reveals the high-contribution sequence motifs of cell type-specific enhancers, displaying attribution scores for each position in the sequence. (a) The"
+        }
+      ],
+      "images": []
+    },
+    {
+      "file": "Li 等 - 2024 - Cell-Specific Highly Correlated Network for Self-Supervised Distillation in Cell Type Annotation.pdf",
+      "bytes": 4929780,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1. Overview of the scTCHCN Framework. (A) Schematic of the self-supervised distillation learning process using single-cell transcriptome data and"
+        },
+        {
+          "number": 2,
+          "page": 4,
+          "caption": "Fig. 2. (A) t-SNE plots for three datasets. The left panel is colored according to the expert classification labels from the original experiment, while the right"
+        }
+      ],
+      "images": [
+        {
+          "page": 4,
+          "num": 1,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 711,
+          "yppi": 0,
+          "bytes": "2633B"
+        },
+        {
+          "page": 4,
+          "num": 3,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 706,
+          "yppi": 0,
+          "bytes": "2633B"
+        },
+        {
+          "page": 4,
+          "num": 5,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 708,
+          "yppi": 0,
+          "bytes": "2633B"
+        },
+        {
+          "page": 4,
+          "num": 7,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 720,
+          "yppi": 0,
+          "bytes": "2633B"
+        },
+        {
+          "page": 4,
+          "num": 9,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 722,
+          "yppi": 0,
+          "bytes": "2633B"
+        },
+        {
+          "page": 4,
+          "num": 11,
+          "type": "smask",
+          "width": 1629,
+          "height": 1620,
+          "color": "gray",
+          "xppi": 717,
+          "yppi": 0,
+          "bytes": "2633B"
+        }
+      ]
+    },
+    {
+      "file": "Li 等 - 2026 - Distribution and expression aware retrospective learning for single-cell long-tailed class-increment.pdf",
+      "bytes": 5875786,
+      "figures": [
+        {
+          "number": 1,
+          "page": 2,
+          "caption": "Fig. 1. Comparison of conventional and incremental cell annotation approaches. method demonstrates state-of-the-art annotation accuracy across"
+        },
+        {
+          "number": 2,
+          "page": 3,
+          "caption": "Fig. 2. Workflow of single-cell class-incremental annotation. (a) Distribution-aware conditional diffusion generates gene expression profiles for previously seen cells."
+        },
+        {
+          "number": 3,
+          "page": 4,
+          "caption": "Fig. 3. Sparse distribution-aware conditional diffusion for single-cell expression generation, with ⊗ as the weighted operation, E𝐶 the conditional text encoder, and"
+        },
+        {
+          "number": 4,
+          "page": 5,
+          "caption": "Fig. 4. resentation alignment in the novel model’s knowledge distillation. In"
+        },
+        {
+          "number": 5,
+          "page": 6,
+          "caption": "Fig. 5. Illustration of spurious recall and the fuzzy guidance constraint. (a) Spurious recall: the base model misclassifies novel cell types as base types due to annotation"
+        },
+        {
+          "number": 6,
+          "page": 10,
+          "caption": "Fig. 6. Hyperparameter analysis of gene expression-aware alignment in mitigating forgetting on the Vento dataset. The parameters 𝜆𝛽 and 𝜆𝛾 correspond to the"
+        },
+        {
+          "number": 8,
+          "page": 11,
+          "caption": "Fig. 8. Illustration of the distribution-aware retrospection of scLTCIA for gene expression generation. The visualization presents results on four datasets: the He"
+        },
+        {
+          "number": 10,
+          "page": 12,
+          "caption": "Fig. 10. Class distribution across incremental stages on the Zheng68k dataset. The most frequent class from S1 and S2 is introduced into the subsequent stage,"
+        },
+        {
+          "number": 11,
+          "page": 14,
+          "caption": "Fig. 11. Hyperparameter sensitivity analysis on the Zheng68k dataset. Overall accuracy (All ACC) across incremental stages S1–S3 is reported under different"
+        }
+      ],
+      "images": [
+        {
+          "page": 10,
+          "num": 4,
+          "type": "image",
+          "width": 7,
+          "height": 1019,
+          "color": "icc",
+          "xppi": 3589,
+          "yppi": 0,
+          "bytes": "1725B"
+        },
+        {
+          "page": 10,
+          "num": 5,
+          "type": "image",
+          "width": 7,
+          "height": 1020,
+          "color": "icc",
+          "xppi": 3590,
+          "yppi": 0,
+          "bytes": "1683B"
+        },
+        {
+          "page": 10,
+          "num": 6,
+          "type": "image",
+          "width": 7,
+          "height": 1020,
+          "color": "icc",
+          "xppi": 3591,
+          "yppi": 0,
+          "bytes": "1682B"
+        },
+        {
+          "page": 10,
+          "num": 7,
+          "type": "image",
+          "width": 8,
+          "height": 1018,
+          "color": "icc",
+          "xppi": 3592,
+          "yppi": 0,
+          "bytes": "1834B"
+        },
+        {
+          "page": 10,
+          "num": 8,
+          "type": "image",
+          "width": 7,
+          "height": 1020,
+          "color": "icc",
+          "xppi": 3593,
+          "yppi": 0,
+          "bytes": "1659B"
+        },
+        {
+          "page": 10,
+          "num": 9,
+          "type": "image",
+          "width": 7,
+          "height": 1019,
+          "color": "icc",
+          "xppi": 3594,
+          "yppi": 0,
+          "bytes": "1664B"
+        },
+        {
+          "page": 12,
+          "num": 14,
+          "type": "image",
+          "width": 48,
+          "height": 17,
+          "color": "icc",
+          "xppi": 3613,
+          "yppi": 0,
+          "bytes": "1114B"
+        },
+        {
+          "page": 12,
+          "num": 15,
+          "type": "image",
+          "width": 48,
+          "height": 17,
+          "color": "icc",
+          "xppi": 3614,
+          "yppi": 0,
+          "bytes": "1187B"
+        },
+        {
+          "page": 12,
+          "num": 16,
+          "type": "image",
+          "width": 48,
+          "height": 17,
+          "color": "icc",
+          "xppi": 3615,
+          "yppi": 0,
+          "bytes": "905B"
+        }
+      ]
+    },
+    {
+      "file": "Li 等 - 2026 - SAD Sparse-Aware Diffusion Model for Single-Cell Gene Expression Completion.pdf",
+      "bytes": 3330621,
+      "figures": [
+        {
+          "number": 2,
+          "page": 3,
+          "caption": "Fig. 2. Gene completion workflow of the SAD framework. (a) SSSE perceives the sparsely distributed signals of true gene expression and embeds them into"
+        },
+        {
+          "number": 4,
+          "page": 9,
+          "caption": "Fig. 4. Diagram of the four dynamic radiation domain shrinking strategies."
+        },
+        {
+          "number": 7,
+          "page": 10,
+          "caption": "Fig. 7. Violin plots of completed expression for three highly expressed genes (top) and three lowly expressed genes (bottom) in Naive CD4 T cells."
+        },
+        {
+          "number": 8,
+          "page": 11,
+          "caption": "Fig. 8. The t-SNE visualization of the Zheng68 k PBMC dataset is shown here. The left two panels present the ground-truth labels and scGPT predictions based"
+        }
+      ],
+      "images": []
+    },
+    {
+      "file": "Liu 等 - 2023 - Exploring Parameter-Efficient Fine-Tuning of a Large-Scale Pre-Trained Model for scRNA-seq Cell Type.pdf",
+      "bytes": 1986854,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1. Workflow of the large model pre-training – parameter-efficient fine- number of parameters on a large-scale pre-trained model"
+        },
+        {
+          "number": 2,
+          "page": 5,
+          "caption": "Fig. 2. Performance evaluation of different parameter-efficient fine-tuning methods through cross-validation. (A) Performance comparison of different methods"
+        }
+      ],
+      "images": [
+        {
+          "page": 3,
+          "num": 0,
+          "type": "image",
+          "width": 127,
+          "height": 114,
+          "color": "cmyk",
+          "xppi": 92,
+          "yppi": 0,
+          "bytes": "1978B"
+        },
+        {
+          "page": 5,
+          "num": 7,
+          "type": "image",
+          "width": 4,
+          "height": 477,
+          "color": "cmyk",
+          "xppi": 103,
+          "yppi": 0,
+          "bytes": "196B"
+        }
+      ]
+    },
+    {
+      "file": "Xia 等 - 2024 - Assessing parameter efficient methods for pre-trained language model in annotating scRNA-seq data.pdf",
+      "bytes": 3803634,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1. The overview of the workﬂow. It consists of three main processes: large-scale pre-train, parameter-eﬃcient ﬁne-tuning, and comprehensive analysis. Ini-"
+        },
+        {
+          "number": 2,
+          "page": 6,
+          "caption": "Fig. 2. Performance of diﬀerent PEFT methods. (A) Comparative performance of diﬀerent methods during the initial ten epochs. (B) Impact of diﬀerent methods on"
+        },
+        {
+          "number": 3,
+          "page": 7,
+          "caption": "Fig. 3. Performance comparison of diﬀerent PEFT methods across independent datasets. (A) t-SNE visualization of four distinct datasets labeled by source domain."
+        },
+        {
+          "number": 5,
+          "page": 8,
+          "caption": "Fig. 5. Identiﬁcation of novel cell types. (A) Performance evaluation by training models on Baron-human and Baron-mus datasets after excluding alpha cell type."
+        },
+        {
+          "number": 6,
+          "page": 9,
+          "caption": "Fig. 6. Investigation of model interpretability. (A) The dot plot shows the log fold change of each cell’s ﬁve most diﬀerentially expressed genes. The color and size"
+        }
+      ],
+      "images": [
+        {
+          "page": 1,
+          "num": 0,
+          "type": "image",
+          "width": 119,
+          "height": 119,
+          "color": "icc",
+          "xppi": 762,
+          "yppi": 0,
+          "bytes": "234B"
+        }
+      ]
+    },
+    {
+      "file": "Zhang 等 - 2025 - Supervised pre-training for feature extraction in cell type annotation of single-cell multi-omics da.pdf",
+      "bytes": 3426511,
+      "figures": [
+        {
+          "number": 1,
+          "page": 2,
+          "caption": "Fig. 1. Schematic diagram of computationally simulated single-cell type annotation methods. (A) Marker gene-based method. (B) Correlation-based method. (C) Supervised"
+        },
+        {
+          "number": 2,
+          "page": 4,
+          "caption": "Fig. 2. The workflow diagram of the single-cell multi-omics cell type annotation algorithm, scMoAnno. The scMoAnno model undergoes two rounds of supervised learning. In"
+        },
+        {
+          "number": 4,
+          "page": 6,
+          "caption": "Fig. 4. The data preprocessing workflow for single-cell type annotation consists of several key steps. First, quality control is performed on the sample data to identify and remove"
+        },
+        {
+          "number": 5,
+          "page": 8,
+          "caption": "Fig. 5. The performance of the scMoAnno model and nine other comparison methods on the 10X-Multiome, ISSAAC-seq, and SHARE-seq datasets were evaluated using two"
+        },
+        {
+          "number": 6,
+          "page": 9,
+          "caption": "Fig. 6. The combined prediction performance of rare cell recognition experiments on the Multiome-BMMC and ISSAAC-seq datasets is presented. (A) Real cell types in the"
+        },
+        {
+          "number": 7,
+          "page": 11,
+          "caption": "Fig. 7. The figure presents the raw data of four paired single-cell multi-omics datasets after preprocessing, the multi-omics data with cross-features extracted by the cross-attention"
+        },
+        {
+          "number": 8,
+          "page": 12,
+          "caption": "Fig. 8. Compared the performance of three deep learning methods on the Multiome-BMMC dataset in terms of time, FLOPs, parameter count, accuracy, and balanced accuracy."
+        },
+        {
+          "number": 9,
+          "page": 13,
+          "caption": "Fig. 9. Annotation performance under missing-modality conditions on the Multiome-BMMC and ISSAAC-seq datasets. Comparison of annotation accuracy and balanced accuracy"
+        },
+        {
+          "number": 10,
+          "page": 14,
+          "caption": "Fig. 10. Annotation accuracy across 10 random seeds for rare cell types in the Multiome-BMMC (left) and ISSAAC-seq (right) datasets. The model demonstrates robust and"
+        }
+      ],
+      "images": [
+        {
+          "page": 13,
+          "num": 3,
+          "type": "image",
+          "width": 52,
+          "height": 18,
+          "color": "icc",
+          "xppi": 86,
+          "yppi": 0,
+          "bytes": "1105B"
+        }
+      ]
+    },
+    {
+      "file": "Zhang 等 - 2026 - Contrastive learning in both structure and function spaces improve drug-target interaction predictio.pdf",
+      "bytes": 2430855,
+      "figures": [
+        {
+          "number": 1,
+          "page": 3,
+          "caption": "Fig. 1 Molecular 2D structure similarity versus activity"
+        },
+        {
+          "number": 2,
+          "page": 4,
+          "caption": "Fig. 2 Overview of the CLSF-DTI model architecture. The model encodes drug and protein sequences through"
+        },
+        {
+          "number": 3,
+          "page": 7,
+          "caption": "Fig. 3 Diagram of Protein Contrastive Module. It first utilizes two fully connected layers to map protein features"
+        },
+        {
+          "number": 4,
+          "page": 8,
+          "caption": "Fig. 4 Model performance under different similarity thresholds in the single contrastive space. A threshold of 0"
+        },
+        {
+          "number": 5,
+          "page": 13,
+          "caption": "Fig. 5 Performance of CLSF-DTI and its variants on the DrugBank dataset"
+        },
+        {
+          "number": 6,
+          "page": 15,
+          "caption": "Fig. 6 Visualization of weight scores in Cross-Attention module. (a) PDB: 2GU8. (b) PDB: 5N23"
+        }
+      ],
+      "images": [
+        {
+          "page": 1,
+          "num": 0,
+          "type": "image",
+          "width": 179,
+          "height": 186,
+          "color": "gray",
+          "xppi": 2855,
+          "yppi": 0,
+          "bytes": "1949B"
+        },
+        {
+          "page": 1,
+          "num": 1,
+          "type": "image",
+          "width": 179,
+          "height": 186,
+          "color": "index",
+          "xppi": 2863,
+          "yppi": 0,
+          "bytes": "4082B"
+        },
+        {
+          "page": 1,
+          "num": 2,
+          "type": "smask",
+          "width": 179,
+          "height": 186,
+          "color": "gray",
+          "xppi": 2863,
+          "yppi": 0,
+          "bytes": "1949B"
+        },
+        {
+          "page": 4,
+          "num": 4,
+          "type": "image",
+          "width": 131,
+          "height": 132,
+          "color": "icc",
+          "xppi": 141,
+          "yppi": 0,
+          "bytes": "2737B"
+        },
+        {
+          "page": 4,
+          "num": 5,
+          "type": "image",
+          "width": 131,
+          "height": 132,
+          "color": "icc",
+          "xppi": 142,
+          "yppi": 0,
+          "bytes": "5837B"
+        },
+        {
+          "page": 7,
+          "num": 6,
+          "type": "image",
+          "width": 65,
+          "height": 236,
+          "color": "icc",
+          "xppi": 678,
+          "yppi": 0,
+          "bytes": "3403B"
+        }
+      ]
+    },
+    {
+      "file": "Zhang 等 - 2026 - Deep generative framework for modeling single-cell drug perturbation response.pdf",
+      "bytes": 4547183,
+      "figures": [
+        {
+          "number": 1,
+          "page": 4,
+          "caption": "Fig. 1. Overview of the scDPR framework. a) Problem Formulation and Data Pipeline. scRNA-seq data from unperturbed (control; gray) states, processed jointly"
+        },
+        {
+          "number": 2,
+          "page": 11,
+          "caption": "Fig. 2. scDPR accurately predicts out-of-distribution perturbation responses and learns biologically interpretable latent representations. a) Performance"
+        },
+        {
+          "number": 3,
+          "page": 12,
+          "caption": "Fig. 3. The ability of scDPR to capture cell type-speciﬁc gene programs under diﬀerent drug perturbation conditions. a) Gene perturbation eﬀects of"
+        },
+        {
+          "number": 4,
+          "page": 13,
+          "caption": "Fig. 4. Training eﬃciency and robustness analysis of the scDPR model on the sci-Plex3 dataset. a-b) : Subplots present the performance trajectories of the"
+        },
+        {
+          "number": 5,
+          "page": 14,
+          "caption": "Fig. 5. Training dynamics of individual loss components. The curves show the evolution of each loss term during training, including the 𝐿𝑟𝑒𝑐𝑜𝑛 , 𝐿𝐾𝐿 , 𝐿𝑐𝑓 , 𝐿𝑜𝑡 ,"
+        },
+        {
+          "number": 6,
+          "page": 15,
+          "caption": "Fig. 6. Tanimoto similarity distribution histogram. a) Comparison of the distribution of compound similarity after scaﬀold split on the L1000. b) Comparison of"
+        }
+      ],
+      "images": [
+        {
+          "page": 1,
+          "num": 2,
+          "type": "image",
+          "width": 45,
+          "height": 45,
+          "color": "icc",
+          "xppi": 669,
+          "yppi": 0,
+          "bytes": "4210B"
+        },
+        {
+          "page": 1,
+          "num": 3,
+          "type": "image",
+          "width": 45,
+          "height": 45,
+          "color": "icc",
+          "xppi": 669,
+          "yppi": 0,
+          "bytes": "4210B"
+        },
+        {
+          "page": 1,
+          "num": 4,
+          "type": "image",
+          "width": 45,
+          "height": 45,
+          "color": "icc",
+          "xppi": 669,
+          "yppi": 0,
+          "bytes": "4210B"
+        },
+        {
+          "page": 1,
+          "num": 5,
+          "type": "image",
+          "width": 45,
+          "height": 45,
+          "color": "icc",
+          "xppi": 669,
+          "yppi": 0,
+          "bytes": "4210B"
+        },
+        {
+          "page": 1,
+          "num": 6,
+          "type": "image",
+          "width": 118,
+          "height": 117,
+          "color": "icc",
+          "xppi": 677,
+          "yppi": 0,
+          "bytes": "254B"
+        }
+      ]
+    },
+    {
+      "file": "Zhang 等 - 2027 - A gene signature-guided bidirectional retrieval framework for single-cell RNA-seq analysis.pdf",
+      "bytes": 4851000,
+      "figures": [
+        {
+          "number": 1,
+          "page": 2,
+          "caption": "Fig. 1. Schematic diagram of traditional single-cell annotation and scBRF bidirectional retrieval framework: (A) the traditional single-cell annotation process only"
+        },
+        {
+          "number": 2,
+          "page": 5,
+          "caption": "Fig. 2. Schematic diagram of the scBRF framework: (A) integration of scRNA-seq datasets from 22 human tissues and 11 diseases. (B) based on the original gene"
+        },
+        {
+          "number": 2,
+          "page": 6,
+          "caption": "Fig. 2(C) as the pre-training core of scBRF. With gene signature serving In the similarity calculation step, the cosine similarity matrix among"
+        },
+        {
+          "number": 3,
+          "page": 8,
+          "caption": "Fig. 3. Schematic diagram of the reverse retrieval process: given a text query, the query embedding is generated through a BioBERT encoder. The most similar gene"
+        },
+        {
+          "number": 4,
+          "page": 12,
+          "caption": "Fig. 4. Performance of forward retrieval across methods and datasets. (A) heatmap of classification accuracy for scBRF and the five comparison methods on multiple"
+        },
+        {
+          "number": 5,
+          "page": 13,
+          "caption": "Fig. 5. Reverse retrieval performance on the validation dataset: (A) bar plot showing the RGS for the top 10 cell types, highlighting variability in retrieval purity"
+        },
+        {
+          "number": 6,
+          "page": 14,
+          "caption": "Fig. 6. Heatmap of reverse retrieval accuracy and retrieval goodness score: (A) the heatmap displays the retrieval accuracy of all cell types, with rows representing"
+        },
+        {
+          "number": 7,
+          "page": 15,
+          "caption": "Fig. 7(C) compares the inference efficiency of scBRF against four Collectively, these results indicate that both the forward and reverse"
+        },
+        {
+          "number": 7,
+          "page": 16,
+          "caption": "Fig. 7. Impact of gene signature completeness and computational efficiency of forward retrieval. (A) accuracy of scBRF on tissue-related datasets as the percentage"
+        }
+      ],
+      "images": []
+    }
+  ]
+}

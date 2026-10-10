@@ -1,0 +1,4 @@
+type = "publication"
+title = "论文"
+description = "经 ORCID 与 Crossref 核验的论文列表。"
+source = "publications.bib"

@@ -1,0 +1,4 @@
+type = "text"
+title = "研究"
+description = "面向计算生物学的人工智能研究方向。"
+source = "research.md"

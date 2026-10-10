@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications"
+description = "Peer-reviewed publications verified through ORCID and Crossref."
+source = "publications.bib"

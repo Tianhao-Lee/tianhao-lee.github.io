@@ -1,0 +1,4 @@
+type = "text"
+title = "Research"
+description = "Research directions in artificial intelligence for computational biology."
+source = "research.md"

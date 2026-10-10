@@ -1,0 +1,213 @@
+{
+  "dpi": 300,
+  "papers": [
+    {
+      "id": "bcdb",
+      "pdf": "He 等 - 2025 - BCDB A dual-branch network based on transformer for predicting transcription factor binding sites.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        34.83,
+        50.835,
+        560.51,
+        518.995
+      ],
+      "output": "bcdb-figure1.webp",
+      "width": 2000,
+      "height": 1782,
+      "bytes": 199638
+    },
+    {
+      "id": "distribution2025",
+      "pdf": "He 等 - 2025 - Distribution and Knowledge Alignment-based Single-cell Multi-omics Cell Type Annotation.pdf",
+      "page": 3,
+      "figure": 2,
+      "pdfBounds": [
+        43.057,
+        49.053,
+        567.951,
+        184.553
+      ],
+      "output": "alignment-figure2.webp",
+      "width": 2000,
+      "height": 517,
+      "bytes": 87816
+    },
+    {
+      "id": "leap",
+      "pdf": "He 等 - 2026 - LEAP Long sequence enhancer activity analysis and prediction framework.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        65.784,
+        66.369,
+        529.544,
+        358
+      ],
+      "output": "leap-figure1.webp",
+      "width": 1932,
+      "height": 1215,
+      "bytes": 179140
+    },
+    {
+      "id": "sctchcn",
+      "pdf": "Li 等 - 2024 - Cell-Specific Highly Correlated Network for Self-Supervised Distillation in Cell Type Annotation.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        37.34,
+        43.719,
+        573.237,
+        366
+      ],
+      "output": "sctchcn-figure1.webp",
+      "width": 2000,
+      "height": 1203,
+      "bytes": 255714
+    },
+    {
+      "id": "longtail",
+      "pdf": "Li 等 - 2026 - Distribution and expression aware retrospective learning for single-cell long-tailed class-increment.pdf",
+      "page": 3,
+      "figure": 2,
+      "pdfBounds": [
+        85.95,
+        48.671,
+        505.947,
+        207
+      ],
+      "output": "longtail-figure2.webp",
+      "width": 1750,
+      "height": 660,
+      "bytes": 95852
+    },
+    {
+      "id": "sad",
+      "pdf": "Li 等 - 2026 - SAD Sparse-Aware Diffusion Model for Single-Cell Gene Expression Completion.pdf",
+      "page": 3,
+      "figure": 2,
+      "pdfBounds": [
+        49.163,
+        66.036,
+        549.163,
+        349.516
+      ],
+      "output": "sad-figure2.webp",
+      "width": 2000,
+      "height": 1134,
+      "bytes": 190220
+    },
+    {
+      "id": "peft2023",
+      "pdf": "Liu 等 - 2023 - Exploring Parameter-Efficient Fine-Tuning of a Large-Scale Pre-Trained Model for scRNA-seq Cell Type.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        38.293,
+        85.418,
+        312.741,
+        384
+      ],
+      "output": "peft2023-figure1.webp",
+      "width": 1144,
+      "height": 1244,
+      "bytes": 104196
+    },
+    {
+      "id": "peft2024",
+      "pdf": "Xia 等 - 2024 - Assessing parameter efficient methods for pre-trained language model in annotating scRNA-seq data.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        34.902,
+        50.785,
+        560.58,
+        394.384
+      ],
+      "output": "peft2024-figure1.webp",
+      "width": 2000,
+      "height": 1308,
+      "bytes": 174582
+    },
+    {
+      "id": "scmoanno",
+      "pdf": "Zhang 等 - 2025 - Supervised pre-training for feature extraction in cell type annotation of single-cell multi-omics da.pdf",
+      "page": 4,
+      "figure": 2,
+      "pdfBounds": [
+        65.241,
+        45.914,
+        533.309,
+        357
+      ],
+      "output": "scmoanno-figure2.webp",
+      "width": 1950,
+      "height": 1296,
+      "bytes": 151626
+    },
+    {
+      "id": "scdpr",
+      "pdf": "Zhang 等 - 2026 - Deep generative framework for modeling single-cell drug perturbation response.pdf",
+      "page": 4,
+      "figure": 1,
+      "pdfBounds": [
+        50.67,
+        51.063,
+        541.967,
+        528
+      ],
+      "output": "scdpr-figure1.webp",
+      "width": 2000,
+      "height": 1941,
+      "bytes": 229676
+    },
+    {
+      "id": "scbrf",
+      "pdf": "Zhang 等 - 2027 - A gene signature-guided bidirectional retrieval framework for single-cell RNA-seq analysis.pdf",
+      "page": 5,
+      "figure": 2,
+      "pdfBounds": [
+        52.059,
+        52.323,
+        553.272,
+        429
+      ],
+      "output": "scbrf-figure2.webp",
+      "width": 2000,
+      "height": 1503,
+      "bytes": 240754
+    },
+    {
+      "id": "clsfdti",
+      "pdf": "Zhang 等 - 2026 - Contrastive learning in both structure and function spaces improve drug-target interaction predictio.pdf",
+      "page": 4,
+      "figure": 2,
+      "pdfBounds": [
+        113.567,
+        475.764,
+        481.706,
+        693
+      ],
+      "output": "clsfdti-figure2.webp",
+      "width": 1534,
+      "height": 905,
+      "bytes": 72982
+    },
+    {
+      "id": "comet",
+      "pdf": "IJCNN-26-CameraReady.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        34.07,
+        54.266,
+        573.515,
+        263
+      ],
+      "output": "comet-figure1.webp",
+      "width": 2000,
+      "height": 774,
+      "bytes": 157794
+    }
+  ]
+}

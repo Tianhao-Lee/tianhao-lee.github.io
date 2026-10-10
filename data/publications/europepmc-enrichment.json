@@ -1,0 +1,136 @@
+{
+    "generatedAt":  "2026-10-10T08:42:30.9189717Z",
+    "source":  "Europe PMC REST API",
+    "works":  [
+                  {
+                      "doi":  "10.1109/bibm58861.2023.10385599",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  },
+                  {
+                      "doi":  "10.1016/j.ymeth.2024.05.007",
+                      "title":  "Assessing parameter efficient methods for pre-trained language model in annotating scRNA-seq data.",
+                      "pmid":  "38759908",
+                      "pmcid":  null,
+                      "isOpenAccess":  "N",
+                      "inPMC":  "N",
+                      "license":  null,
+                      "abstract":  "Annotating cell types of single-cell RNA sequencing (scRNA-seq) data is crucial for studying cellular heterogeneity in the tumor microenvironment. Recently, large-scale pre-trained language models (PLMs) have achieved significant progress in cell-type annotation of scRNA-seq data. This approach effectively addresses previous methods\u0027 shortcomings in performance and generalization. However, fine-tuning PLMs for different downstream tasks demands considerable computational resources, rendering it impractical. Hence, a new research branch introduces parameter-efficient fine-tuning (PEFT). This involves optimizing a few parameters while leaving the majority unchanged, leading to substantial reductions in computational expenses. Here, we utilize scBERT, a large-scale pre-trained model, to explore the capabilities of three PEFT methods in scRNA-seq cell type annotation. Extensive benchmark studies across several datasets demonstrate the superior applicability of PEFT methods. Furthermore, downstream analysis using models obtained through PEFT showcases their utility in novel cell type discovery and model interpretability for potential marker genes. Our findings underscore the considerable potential of PEFT in PLM-based cell type annotation, presenting novel perspectives for the analysis of scRNA-seq data."
+                  },
+                  {
+                      "doi":  "10.1109/bibm62325.2024.10822095",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  },
+                  {
+                      "doi":  "10.1016/j.ymeth.2024.12.006",
+                      "title":  "BCDB: A dual-branch network based on transformer for predicting transcription factor binding sites.",
+                      "pmid":  "39701486",
+                      "pmcid":  null,
+                      "isOpenAccess":  "N",
+                      "inPMC":  "N",
+                      "license":  null,
+                      "abstract":  "Transcription factor binding sites (TFBSs) are critical in regulating gene expression. Precisely locating TFBSs can reveal the mechanisms of action of different transcription factors in gene transcription. Various deep learning methods have been proposed to predict TFBS; however, these models often need help demonstrating ideal performance under limited data conditions. Furthermore, these models typically have complex structures, which makes their decision-making processes difficult to transparentize. Addressing these issues, we have developed a framework named BCDB. This framework integrates multi-scale DNA information and employs a dual-branch output strategy. Integrating DNABERT, convolutional neural networks (CNN), and multi-head attention mechanisms enhances the feature extraction capabilities, significantly improving the accuracy of predictions. This innovative method aims to balance the extraction of global and local information, enhancing predictive performance while utilizing attention mechanisms to provide an intuitive way to explain the model\u0027s predictions, thus strengthening the overall interpretability of the model. Prediction results on 165 ChIP-seq datasets show that BCDB significantly outperforms other existing deep learning methods in terms of performance. Additionally, since the BCDB model utilizes transfer learning methods, it can transfer knowledge learned from many unlabeled data to specific cell line prediction tasks, allowing our model to achieve cross-cell line TFBS prediction. The source code for BCDB is available on https://github.com/ZhangLab312/BCDB."
+                  },
+                  {
+                      "doi":  "10.1093/bib/bbaf207",
+                      "title":  "An overview of computational methods in single-cell transcriptomic cell type annotation.",
+                      "pmid":  "40347979",
+                      "pmcid":  "PMC12065632",
+                      "isOpenAccess":  "Y",
+                      "inPMC":  "Y",
+                      "license":  "cc by",
+                      "abstract":  "The rapid accumulation of single-cell RNA sequencing data has provided unprecedented computational resources for cell type annotation, significantly advancing our understanding of cellular heterogeneity. Leveraging gene expression profiles derived from transcriptomic data, researchers can accurately infer cell types, sparking the development of numerous innovative annotation methods. These methods utilize a range of strategies, including marker genes, correlation-based matching, and supervised learning, to classify cell types. In this review, we systematically examine these annotation approaches based on transcriptomics-specific gene expression profiles and provide a comprehensive comparison and categorization of these methods. Furthermore, we focus on the main challenges in the annotation process, especially the long-tail distribution problem arising from data imbalance in rare cell types. We discuss the potential of deep learning techniques to address these issues and enhance model capability in recognizing novel cell types within an open-world framework."
+                  },
+                  {
+                      "doi":  "10.1109/ijcnn64981.2025.11227727",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  },
+                  {
+                      "doi":  "10.1016/j.asoc.2025.113585",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  },
+                  {
+                      "doi":  "10.1186/s12859-026-06377-4",
+                      "title":  "Contrastive learning in both structure and function spaces improve drug-target interaction prediction.",
+                      "pmid":  "41629789",
+                      "pmcid":  "PMC12951913",
+                      "isOpenAccess":  "Y",
+                      "inPMC":  "Y",
+                      "license":  "cc by-nc-nd",
+                      "abstract":  "BACKGROUND : Identifying drug–target interactions (DTIs) is essential in drug discovery and repositioning. Recently, deep learning has become the mainstream methodology for DTI prediction. However, the scarcity of three-dimensional structural data has forced almost all methods to predict drug-target interactions with low-dimensional data, thereby constraining their overall performance. METHODS : In tackling this challenge, we introduce a novel approach, CLSF-DTI. CLSF-DTI incorporates high-dimensional structural and functional information into the drug and protein features through contrastive learning during the feature extraction stage. This ensures that the model no longer solely focuses on sequence information, leading to a more precise modeling outcome. RESULTS : Experiments on five benchmark datasets demonstrate that CLSF-DTI achieves the best overall performance among five state-of-the-art baselines. Through ablation studies, we further prove that the contrastive module enhances the predictive performance and generalization ability of CLSF-DTI. Moreover, CLSF-DTI successfully identified some ligands for the protein PKA-Cα in drug screening experiments. CONCLUSIONS : This study proposed a contrastive learning model CLSF-DTI that integrates structural and functional similarity. It outperforms existing methods in drug-target interaction prediction and has stronger generalization ability. However, the handling of unbalanced data and long-distance dependencies still needs to be improved in the future. The data and source code are available at https://github.com/ZhangLab312/CLSF_DTI ."
+                  },
+                  {
+                      "doi":  "10.1016/j.compbiolchem.2025.108850",
+                      "title":  "LEAP: Long sequence enhancer activity analysis and prediction framework.",
+                      "pmid":  "41478195",
+                      "pmcid":  null,
+                      "isOpenAccess":  "N",
+                      "inPMC":  "N",
+                      "license":  null,
+                      "abstract":  "\u003ch4\u003eBackground and objective\u003c/h4\u003eEnhancer activity is central to the regulation of gene expression. Despite extensive computational research on enhancers, there is still a lack of understanding of the relationship between DNA sequences and enhancer activity, overlooking the importance of sequence scale, which poses particular challenges for predicting enhancer activity. This study aims to develop an interpretable framework for predicting enhancer activity by: (a) using longer-scale information and explore the relationship between scale and task sensitivity; and (b) designing multi-angle experiments to analyze key motifs and conduct cross-cell validation.\u003ch4\u003eMethods and results\u003c/h4\u003eThis research have constructed LEAP (Learn Enhancer Activity and Predict), an interpretable framework based on the Performer model. It directly captures longer-scale information on enhancers from DNA sequences for predicting enhancer activity and exploring enhancer grammar. Compared to previous models with shorter inputs, this architecture first integrates gene information within a 1001bp range of enhancers to achieve accurate activity prediction and conducts exploration at multiple scales. Experiments show that LEAP outperforms the currently published state-of-the-art(SOTA)methods, achieving the highest PCC and the lowest MSE, the mean values reached 0.794 and 0.406 across all datasets, respectively. Contribution score visualization delineates the heterogeneous functional importance across critical motifs.\u003ch4\u003eConclusions\u003c/h4\u003eOur study underscores that LEAP provides a new perspective for predicting and analyzing enhancer activity.it explores the impact of DNA sequences of different bp lengths on enhancer activity prediction, analyzing motifs that have a key influence on the prediction task from multiple perspectives, providing insights into the internal grammar of enhancers, thereby better understanding the significance of long-sequence enhancers."
+                  },
+                  {
+                      "doi":  "10.1016/j.asoc.2026.114745",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  },
+                  {
+                      "doi":  "10.1109/tcbbio.2026.3674362",
+                      "title":  "SAD: Sparse-Aware Diffusion Model for Single-Cell Gene Expression Completion.",
+                      "pmid":  "41838515",
+                      "pmcid":  null,
+                      "isOpenAccess":  "N",
+                      "inPMC":  "N",
+                      "license":  null,
+                      "abstract":  "Single-cell RNA sequencing (scRNA-seq) is entering an era of foundation models that accept the complete gene atlas as input, yet most current datasets cover only 10-12 k genes and contain numerous technical zeros, severely limiting the generalization of these models in downstream tasks. To address this, we pioneer the gene-completion task for scRNA-seq and present SAD, a diffusion-based framework tailored to extremely sparse data, capable of completing genes and correcting sparsity bias under high missing rates. Unlike imputation or reconstruction methods that rely on the i.i.d. assumption, SAD\u0027s completion paradigm can generate gene entries originally absent from the expression profile, be aware of and rectify sparsity-distribution bias, and supply foundation models with consistent, reliable inputs of more than 30 k genes. Extensive benchmarks show that SAD significantly outperforms existing methods across multiple completion metrics, particularly in extreme scenarios with missing rates above 80%. This provides a data foundation for reusing missing scRNA-seq information and for precision-medicine applications."
+                  },
+                  {
+                      "doi":  "10.1016/j.neunet.2026.109005",
+                      "title":  "Deep generative framework for modeling single-cell drug perturbation response.",
+                      "pmid":  "42019216",
+                      "pmcid":  null,
+                      "isOpenAccess":  "N",
+                      "inPMC":  "N",
+                      "license":  null,
+                      "abstract":  "Accurate characterization of cell-specific drug responses is a prerequisite for linking molecular mechanisms to patient-level therapeutic variability. Heterogeneous cellular responses substantially complicate the inference of drug effects from single-cell transcriptomic data. To address this, we introduce scDPR, the single-cell Drug Perturbation Responses framework. This framework predicts drug-perturbed single-cell transcriptomic states and decomposes observed responses into distinct causal effects. The framework consists of two modules: an attribute adaptation module that models drug-induced transcriptional shifts at the single-cell level; and a causal graph learning module that combining optimal transport (OT) infers direct drug effects while accounting for confounding influences. By integrating drug molecular features, dosage information, and cell-specific attributes, the model learns a latent representation that captures cell-specific transcriptional responses to drug perturbations. We conducted systematic evaluations on large-scale single-cell perturbation datasets, including L1000 and sci-Plex3. Experimental results demonstrate that scDPR outperforms state-of-the-art methods such as chemCPA, in forecasting transcriptome responses to unseen compounds and unknown pathways. It also offers insights into the cellular heterogeneity of drug responses, identifying key subpopulations that contribute to variability in treatment outcomes. In addition, compared to mainstream basic models, scDPR achieves better performance with shorter training time and fewer rounds, providing efficient computational support for large-scale drug screening and mechanism research."
+                  },
+                  {
+                      "doi":  "10.1016/j.neucom.2026.135033",
+                      "title":  null,
+                      "pmid":  null,
+                      "pmcid":  null,
+                      "isOpenAccess":  null,
+                      "inPMC":  null,
+                      "license":  null,
+                      "abstract":  null
+                  }
+              ]
+}

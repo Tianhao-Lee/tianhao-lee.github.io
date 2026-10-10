@@ -1,0 +1,70 @@
+[site]
+title = "Tianhao Li"
+description = "Academic website of Tianhao Li, focusing on artificial intelligence for computational biology."
+favicon = "/favicon.svg"
+url = "https://tianhao-lee.github.io"
+last_updated = "October 10, 2026"
+
+[author]
+name = "Tianhao Li"
+title = "AI for Computational Biology"
+institution = "College of Computer Science, Sichuan University"
+avatar = "/avatar.webp"
+
+[social]
+location = "Chengdu, China"
+location_url = "https://www.openstreetmap.org/search?query=Sichuan%20University"
+location_details = [
+  "College of Computer Science,",
+  "Sichuan University, Chengdu, China"
+]
+google_scholar = "https://scholar.google.com/citations?user=3oqPdxUAAAAJ&hl=zh-CN"
+orcid = "https://orcid.org/0009-0007-2952-7788"
+github = "https://github.com/Tianhao-Lee"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Labs"
+type = "page"
+target = "labs"
+href = "/labs"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

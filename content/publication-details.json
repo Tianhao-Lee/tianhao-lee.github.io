@@ -1,0 +1,569 @@
+{
+  "version": 1,
+  "papers": [
+    {
+      "id": "liu2023exploring",
+      "doi": "10.1109/bibm58861.2023.10385599",
+      "slug": "peft-scrna-annotation-bibm-2023",
+      "summary": "A conference study of parameter-efficient fine-tuning strategies for applying large pre-trained language models to scRNA-seq cell type annotation.",
+      "contentBasis": "abstract",
+      "motivation": "Large pre-trained language models can improve scRNA-seq annotation, but full fine-tuning is computationally expensive and difficult to repeat across downstream datasets.",
+      "method": "Using scBERT as the backbone, the study compares parameter-efficient fine-tuning strategies across multiple scRNA-seq datasets. It evaluates the performance and compatibility of these strategies rather than retraining the full model.",
+      "contributions": [
+        "Systematically explores PEFT for scBERT-based cell type annotation.",
+        "Compares multiple PEFT methods across several datasets.",
+        "Provides an early benchmark foundation for subsequent PEFT studies."
+      ],
+      "results": "The study reports strong and consistent performance for parameter-efficient methods, supporting them as practical alternatives to full fine-tuning.",
+      "abstract": "Accurate identification of cell types is a pivotal and intricate task in scRNA-seq data analysis. Recently, significant strides have been made in cell type annotation of scRNA-seq data using pre-trained language models (PLMs). This method has surmounted the constraints of conventional approaches regarding precision, robustness, and generalization. However, the fine-tuning process of large-scale pre-trained models incurs substantial computational expenses. To tackle this issue, a promising avenue of research has emerged, proposing parameter-efficient fine-tuning techniques for PLMs. These techniques concentrate on fine-tuning only a small portion of the model parameters while attaining comparable performance. In this study, we extensively research parameter-efficient fine-tuning methods for scRNA-seq cell type annotation, employing scBERT as the backbone. We scrutinize the performance and compatibility of various parameter-efficient fine-tuning methodologies across multiple datasets. Through comprehensive analysis, we demonstrate the remarkable performance of parameter-efficient fine-tuning methods in cell type annotation.",
+      "figure": {
+        "src": "/papers/local-figures/peft2023-figure1.webp",
+        "width": 1144,
+        "height": 1244,
+        "alt": "Workflow of parameter-efficient fine-tuning for scRNA-seq annotation",
+        "caption": "Figure 1. Workflow of large-model pre-training and parameter-efficient fine-tuning.",
+        "credit": "Liu et al., BIBM 2023, Figure 1",
+        "sourceUrl": "https://doi.org/10.1109/bibm58861.2023.10385599",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/PE-tuning"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Semantic Scholar abstract; Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "xia2024assessing",
+      "doi": "10.1016/j.ymeth.2024.05.007",
+      "slug": "assessing-peft-scrna-methods-2024",
+      "summary": "A benchmark study of parameter-efficient fine-tuning methods for pre-trained language models in scRNA-seq annotation.",
+      "contentBasis": "abstract",
+      "motivation": "Fine-tuning large pre-trained models for every scRNA-seq task is computationally costly, while reliable and transferable cell type annotation remains essential.",
+      "method": "The study uses the scBERT model and evaluates three parameter-efficient fine-tuning approaches on multiple datasets. It further examines whether the adapted models support novel cell type discovery and interpretability through potential marker genes.",
+      "contributions": [
+        "Benchmarks three PEFT methods for scBERT-based annotation.",
+        "Evaluates computational efficiency alongside annotation performance.",
+        "Uses downstream analyses to explore novel cell types and model interpretation."
+      ],
+      "results": "The abstract reports superior applicability of PEFT methods across several datasets and demonstrates utility in novel cell type discovery and marker-gene interpretation.",
+      "abstract": "Annotating cell types of single-cell RNA sequencing (scRNA-seq) data is crucial for studying cellular heterogeneity in the tumor microenvironment. Recently, large-scale pre-trained language models (PLMs) have achieved significant progress in cell-type annotation of scRNA-seq data. However, fine-tuning PLMs for different downstream tasks demands considerable computational resources. Hence, a new research branch introduces parameter-efficient fine-tuning (PEFT). Here, we utilize scBERT to explore the capabilities of three PEFT methods in scRNA-seq cell type annotation. Extensive benchmark studies across several datasets demonstrate the superior applicability of PEFT methods. Downstream analysis showcases their utility in novel cell type discovery and model interpretability for potential marker genes.",
+      "figure": {
+        "src": "/papers/local-figures/peft2024-figure1.webp",
+        "width": 2000,
+        "height": 1308,
+        "alt": "Overview of the PEFT evaluation workflow for scRNA-seq annotation",
+        "caption": "Figure 1. Overview of the PEFT evaluation workflow.",
+        "credit": "Xia et al., Methods 2024, Figure 1",
+        "sourceUrl": "https://doi.org/10.1016/j.ymeth.2024.05.007",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Europe PMC abstract (PMID 38759908); Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "li2024cell",
+      "doi": "10.1109/bibm62325.2024.10822095",
+      "slug": "sctchcn-cell-specific-distillation-2024",
+      "summary": "A self-supervised distillation framework that learns cell-level and gene-level relationships for cell type annotation.",
+      "contentBasis": "abstract",
+      "motivation": "Existing self-supervised methods for transcriptomic annotation mainly encode gene-level features, leaving cell-level structure and cross-level interactions underexplored.",
+      "method": "The proposed scTCHCN framework constructs a cell-specific highly correlated network and combines it with transcriptomic features. A self-supervised distillation paradigm transfers global feature constraints to a student model, which then combines cell- and gene-level information for prediction.",
+      "contributions": [
+        "Introduces a cell-specific highly correlated network for joint cell and gene representation.",
+        "Uses distillation to strengthen global correlations during self-supervised pre-training.",
+        "Aggregates complementary cell-level and gene-level features for final annotation."
+      ],
+      "results": "The abstract reports strong performance in cell type annotation and rare cell identification, with potential for broader applications.",
+      "abstract": "Self-supervised learning has succeeded significantly in cell type annotation based on transcriptomic data. However, existing methods encode transcriptomic data as gene feature representations, limiting self-supervised learning to the gene level. This paper proposes scTCHCN, a self-supervised distillation learning framework with a cell-specific highly correlated network. The framework extracts cell and gene features from single-cell transcriptomic data, promotes interactions during pre-training, and uses distillation to enhance global feature correlation. The pre-trained student model aggregates deep feature constraints and complementary information at the single-cell and gene levels before constructing the final prediction model. Experimental results demonstrate that scTCHCN excels in cell type annotation and rare cell identification.",
+      "figure": {
+        "src": "/papers/local-figures/sctchcn-figure1.webp",
+        "width": 2000,
+        "height": 1203,
+        "alt": "Overview of the scTCHCN self-supervised distillation framework",
+        "caption": "Figure 1. Overview of the scTCHCN framework.",
+        "credit": "Li et al., BIBM 2024, Figure 1",
+        "sourceUrl": "https://doi.org/10.1109/bibm62325.2024.10822095",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/scTCHCN"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Semantic Scholar abstract; Crossref and ORCID metadata; verified code repository",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "he2025bcdb",
+      "doi": "10.1016/j.ymeth.2024.12.006",
+      "slug": "bcdb-transcription-factor-binding-2025",
+      "summary": "A dual-branch transformer framework for predicting transcription factor binding sites from DNA sequence.",
+      "contentBasis": "abstract",
+      "motivation": "Transcription factor binding sites regulate gene expression, but prediction under limited data and complex model structures remains challenging and difficult to interpret.",
+      "method": "BCDB combines DNABERT, convolutional networks, and multi-head attention to capture local and global DNA information. A dual-branch output and transfer-learning strategy support binding-site prediction across cell lines and provide attention-based interpretation.",
+      "contributions": [
+        "Integrates multi-scale DNA representations with a dual-branch prediction design.",
+        "Combines DNABERT, CNN, and attention for local-global feature extraction.",
+        "Uses transfer learning for cross-cell-line TFBS prediction and interpretability."
+      ],
+      "results": "Across 165 ChIP-seq datasets, the abstract reports that BCDB outperforms existing deep learning methods and supports cross-cell-line prediction.",
+      "abstract": "Transcription factor binding sites (TFBSs) are critical in regulating gene expression. Various deep learning methods have been proposed to predict TFBS, but they can struggle under limited data and often have complex structures that are difficult to interpret. BCDB integrates multi-scale DNA information, a dual-branch output strategy, DNABERT, convolutional neural networks, and multi-head attention. Prediction results on 165 ChIP-seq datasets show improved performance over existing deep learning methods. Transfer learning further enables cross-cell-line TFBS prediction.",
+      "figure": {
+        "src": "/papers/local-figures/bcdb-figure1.webp",
+        "width": 2000,
+        "height": 1782,
+        "alt": "Overall architecture of the BCDB transcription factor binding site model",
+        "caption": "Figure 1. The overall framework of BCDB.",
+        "credit": "He et al., Methods 2025, Figure 1",
+        "sourceUrl": "https://doi.org/10.1016/j.ymeth.2024.12.006",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/BCDB"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Europe PMC abstract (PMID 39701486); Crossref and ORCID metadata; verified code repository",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "li2025overview",
+      "doi": "10.1093/bib/bbaf207",
+      "slug": "single-cell-annotation-methods-review-2025",
+      "summary": "A systematic review and comparison of computational methods for single-cell transcriptomic cell type annotation.",
+      "contentBasis": "full-text",
+      "motivation": "Single-cell RNA sequencing has produced large and heterogeneous datasets, while annotation methods use very different strategies and remain difficult to compare. Rare cell types and open-world recognition further complicate the task.",
+      "method": "The review organizes annotation methods into gene-expression-based, correlation-based reference, data-driven reference, and large-scale pre-training approaches. It compares their workflows, data requirements, evaluation practices, and limitations, with emphasis on long-tail cell populations and unseen cell types.",
+      "contributions": [
+        "Provides a taxonomy of transcriptomic cell type annotation methods.",
+        "Compares preprocessing, benchmarking, and evaluation practices across method families.",
+        "Highlights long-tail rare-cell annotation and open-world recognition as key challenges."
+      ],
+      "results": "The review compares nine annotation methods across seven benchmark datasets and discusses differences in performance and stability. It identifies multi-omics integration, dynamic clustering, and continual learning as promising directions.",
+      "abstract": "The rapid accumulation of single-cell RNA sequencing data has provided unprecedented computational resources for cell type annotation. This review systematically examines annotation approaches based on transcriptomics-specific gene expression profiles and provides a comparison and categorization of these methods. It focuses on major challenges in annotation, especially the long-tail distribution problem arising from rare cell types, and discusses deep learning techniques for recognizing novel cell types within an open-world framework.",
+      "figure": {
+        "src": "/papers/local-figures/review-figure3.webp",
+        "width": 666,
+        "height": 410,
+        "alt": "Flowchart comparing single-cell annotation method families",
+        "caption": "Figure 3. Flowchart of single-cell type annotation methods.",
+        "credit": "Li et al., Briefings in Bioinformatics 2025, Figure 3",
+        "sourceUrl": "https://doi.org/10.1093/bib/bbaf207",
+        "license": "CC BY 4.0"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 3",
+        "imagePermission": "CC BY 4.0",
+        "evidence": "Europe PMC full-text XML (PMC12065632); abstract and figure caption verified",
+        "missing": []
+      }
+    },
+    {
+      "id": "he2025distribution",
+      "doi": "10.1109/ijcnn64981.2025.11227727",
+      "slug": "multiomics-distribution-knowledge-alignment-2025",
+      "summary": "A multimodal alignment framework for cell type annotation using paired single-cell transcriptomic and chromatin accessibility data.",
+      "contentBasis": "abstract",
+      "motivation": "Single-cell data are high-dimensional, sparse, and noisy. Transcriptome-only annotation discards complementary chromatin information and can degrade accuracy across experimental conditions.",
+      "method": "The method combines inter-modal feature alignment with inter-model knowledge alignment. Feature alignment corrects distribution differences between scRNA-seq and scATAC-seq in a shared latent space, while knowledge distillation transfers structured information from a teacher to an efficient student model.",
+      "contributions": [
+        "Aligns transcriptomic and chromatin modalities in a shared latent space.",
+        "Uses teacher-student knowledge alignment for annotation efficiency.",
+        "Reduces dependence on a single omics modality and supports rare-cell generalization."
+      ],
+      "results": "Experiments on public datasets report better performance than single-omics models across multiple benchmarks, with stronger generalization to rare cell types.",
+      "abstract": "Single-cell type annotation is crucial for understanding the tumor microenvironment. High-dimensional sparsity and technical noise challenge existing annotation methods, while transcriptome-only approaches neglect complementary multi-omics information. This study proposes a multimodal alignment method with inter-modal feature alignment and inter-model knowledge alignment to integrate scRNA-seq and scATAC-seq data. The alignment strategies correct distributional differences and transfer structured knowledge from a teacher to a student model. Experiments on public datasets show improved performance over single-omics models and stronger generalization to rare cell types.",
+      "figure": {
+        "src": "/papers/local-figures/alignment-figure2.webp",
+        "width": 2000,
+        "height": 517,
+        "alt": "Transformer-based multi-omics alignment and distillation architecture",
+        "caption": "Figure 2. Transformer architecture for aligning scRNA-seq and scATAC-seq data.",
+        "credit": "He et al., IJCNN 2025, Figure 2",
+        "sourceUrl": "https://doi.org/10.1109/ijcnn64981.2025.11227727",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Semantic Scholar abstract; Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "zhang2025supervised",
+      "doi": "10.1016/j.asoc.2025.113585",
+      "slug": "supervised-pretraining-multiomics-2025",
+      "summary": "A supervised pre-training framework that fuses paired scRNA-seq and scATAC-seq data through cross-attention for cell type annotation.",
+      "contentBasis": "full-text",
+      "motivation": "Single-omics measurements capture only partial cellular states, and existing multi-omics methods still face challenges in efficient feature fusion, interpretation, and generalization to rare cell types.",
+      "method": "scMoAnno performs two rounds of supervised learning: a pre-trained cross-attention fusion extractor first models genetic and epigenetic interactions, followed by a Transformer-based classification stage over the fused representations.",
+      "contributions": [
+        "Uses supervised pre-training for cross-omics feature fusion.",
+        "Combines cross-attention extraction with a Transformer classification stage.",
+        "Improves rare-cell recognition and downstream clustering analysis."
+      ],
+      "results": "Across four benchmark datasets, the study reports that scMoAnno surpasses nine comparison methods in overall annotation performance and improves fused feature quality for downstream analysis.",
+      "abstract": "Cell type annotation is paramount for subsequent biomedical research. Supervised deep learning has advanced annotation, but efficient use of single-cell multi-omics data and generalization to rare cell types remain challenging. scMoAnno uses pre-trained cross-attention networks for mutual learning and fusion of genetic and epigenetic distributions. Predictions on scRNA-seq and scATAC-seq data demonstrate improved rare-cell recognition through pre-trained feature fusion. Experiments on four benchmark datasets show that scMoAnno surpasses nine state-of-the-art baseline models in overall performance.",
+      "figure": {
+        "src": "/papers/local-figures/scmoanno-figure2.webp",
+        "width": 1950,
+        "height": 1296,
+        "alt": "Workflow of the scMoAnno multi-omics cell type annotation model",
+        "caption": "Figure 2. Workflow diagram of the scMoAnno model.",
+        "credit": "Zhang et al., Applied Soft Computing 2025, Figure 2",
+        "sourceUrl": "https://doi.org/10.1016/j.asoc.2025.113585",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/scMoAnno"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Author-provided PDF; abstract, method, results, and figure caption checked",
+        "missing": [
+          "Publisher reuse confirmation before public deployment"
+        ]
+      }
+    },
+    {
+      "id": "zhang2026contrastive",
+      "doi": "10.1186/s12859-026-06377-4",
+      "slug": "clsf-dti-structure-function-2026",
+      "summary": "A contrastive learning framework that combines structural and functional similarity spaces for drug-target interaction prediction.",
+      "contentBasis": "full-text",
+      "motivation": "Drug-target interaction prediction is central to drug discovery, but scarce three-dimensional structures push most models toward low-dimensional sequence-only representations. This limits the structural and functional information available to the predictor.",
+      "method": "CLSF-DTI encodes drug and protein sequences with convolutional and embedding modules, then uses cross-attention to model interactions. Separate structural and functional similarity spaces provide contrastive supervision, and the learned representations are combined for interaction prediction without requiring 3D structures at inference.",
+      "contributions": [
+        "Integrates structural and functional contrastive spaces for DTI representation learning.",
+        "Uses cross-attention to model drug-target interactions from sequence inputs.",
+        "Demonstrates a practical sequence-only alternative when 3D structures are unavailable."
+      ],
+      "results": "Across five benchmark datasets, CLSF-DTI achieved the best overall performance among five state-of-the-art baselines. Ablation studies supported the contribution of contrastive learning, with reported AUC and AUPR improvements of 2.4–4.9 over Transformer- and CNN-based baselines in sparse and unseen scenarios. A PKA-Cα screening study identified 22 validated ligands.",
+      "abstract": "Identifying drug-target interactions is essential in drug discovery and repositioning. However, the scarcity of three-dimensional structural data has forced most methods to use low-dimensional data, constraining performance. CLSF-DTI incorporates structural and functional information through contrastive learning during feature extraction. Experiments on five benchmark datasets demonstrate the best overall performance among five state-of-the-art baselines, and ablation studies support improved prediction and generalization. The model also identified ligands for PKA-Cα in drug screening.",
+      "figure": {
+        "src": "/papers/local-figures/clsfdti-figure2.webp",
+        "width": 1534,
+        "height": 905,
+        "alt": "Architecture of the CLSF-DTI drug-target interaction model",
+        "caption": "Figure 2. Overview of the CLSF-DTI model architecture.",
+        "credit": "Zhang et al., BMC Bioinformatics 2026, Figure 2",
+        "sourceUrl": "https://doi.org/10.1186/s12859-026-06377-4",
+        "license": "CC BY-NC-ND 4.0"
+      },
+      "links": {
+        "pdf": "https://link.springer.com/content/pdf/10.1186/s12859-026-06377-4.pdf",
+        "code": "https://github.com/ZhangLab312/CLSF_DTI"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "CC BY-NC-ND 4.0",
+        "evidence": "Europe PMC full-text XML (PMC12951913); abstract, results, discussion, and figure caption verified",
+        "missing": []
+      }
+    },
+    {
+      "id": "he2026leap",
+      "doi": "10.1016/j.compbiolchem.2025.108850",
+      "slug": "leap-enhancer-activity-2026",
+      "summary": "An interpretable sequence model for predicting enhancer activity from long DNA contexts.",
+      "contentBasis": "abstract",
+      "motivation": "Enhancer activity is central to gene regulation, but the relationship between DNA sequence, sequence scale, and activity remains difficult to model and interpret.",
+      "method": "LEAP is built on the Performer architecture and uses long DNA contexts around enhancers to predict activity. Multi-scale experiments and motif contribution scores are used to study sequence length effects and identify regulatory motifs.",
+      "contributions": [
+        "Models enhancer activity from long sequence contexts with an interpretable architecture.",
+        "Evaluates performance across multiple sequence scales.",
+        "Uses contribution scores to analyze motifs and their importance."
+      ],
+      "results": "Across evaluated datasets, the abstract reports a mean Pearson correlation of 0.794 and mean MSE of 0.406, outperforming the compared state-of-the-art methods.",
+      "abstract": "Enhancer activity is central to gene expression regulation, but the relationship between DNA sequence and activity remains difficult to model. LEAP is an interpretable Performer-based framework that directly captures long-scale enhancer information from DNA sequences. It integrates gene information within a 1001 bp range and evaluates multiple sequence scales. Experiments report the highest PCC and lowest MSE among compared methods, with mean values of 0.794 and 0.406 across all datasets, respectively. Contribution-score visualization highlights heterogeneous motif importance.",
+      "figure": {
+        "src": "/papers/local-figures/leap-figure1.webp",
+        "width": 1932,
+        "height": 1215,
+        "alt": "Overview of the LEAP enhancer activity prediction framework",
+        "caption": "Figure 1. Overview of the LEAP framework.",
+        "credit": "He et al., Computational Biology and Chemistry 2026, Figure 1",
+        "sourceUrl": "https://doi.org/10.1016/j.compbiolchem.2025.108850",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/LEAP"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Europe PMC abstract (PMID 41478195); Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "li2026distribution",
+      "doi": "10.1016/j.asoc.2026.114745",
+      "slug": "long-tailed-incremental-annotation-2026",
+      "summary": "A replay-based framework for long-tailed class-incremental single-cell annotation using distribution-aware diffusion and expression-aware distillation.",
+      "contentBasis": "full-text",
+      "motivation": "Existing single-cell annotation models have limited incremental-learning capability, while sparse expression data and long-tail class distributions make sequential annotation vulnerable to catastrophic forgetting.",
+      "method": "scLTCIA combines distribution-aware conditional diffusion for generative replay, expression-aware distillation for aligning gene representations across views, and fuzzy guidance with uncertainty constraints to reduce false recall on novel cell types.",
+      "contributions": [
+        "Combines generative replay and distillation for incremental cell type annotation.",
+        "Uses distribution-aware diffusion to reconstruct representative historical cell populations.",
+        "Introduces fuzzy incremental guidance to improve long-tailed and novel-cell recognition."
+      ],
+      "results": "The paper reports significant improvements in multi-session incremental annotation accuracy and supports continuous integration of new datasets for rare-cell and disease-progression analysis.",
+      "abstract": "Single-cell annotation, which identifies specific cell types in biological tissues, is a cornerstone of targeted therapy in precision medicine. However, the lack of incremental annotation capabilities in existing methods limits their adaptability to dynamic immune environment changes and broader applications. Additionally, the high-dimensional sparsity and long-tail distribution of single-cell data hinder practical long-tail incremental annotation. This paper introduces a single-cell incremental annotation framework that combines a distribution-aware diffusion model with an expression-aware knowledge distillation architecture. The distribution-aware module retrospects and replays historical data distributions, enabling precise generation of previously annotated cell types and mitigating catastrophic forgetting. The expression-aware module aligns gene representations through a multi-perspective attention mechanism, enhancing sensitivity to novel cell types while retaining knowledge of dominant categories. A fuzzy incremental guidance mechanism with uncertainty constraints further reduces the adverse effects of long-tail distributions. Experimental results demonstrate significant improvements in multi-session incremental annotation accuracy.",
+      "figure": {
+        "src": "/papers/local-figures/longtail-figure2.webp",
+        "width": 1750,
+        "height": 660,
+        "alt": "Workflow of long-tailed class-incremental single-cell annotation",
+        "caption": "Figure 2. Workflow of single-cell class-incremental annotation.",
+        "credit": "Li et al., Applied Soft Computing 2026, Figure 2",
+        "sourceUrl": "https://doi.org/10.1016/j.asoc.2026.114745",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Author-provided PDF; abstract, method, results, and figure caption checked",
+        "missing": [
+          "Publisher reuse confirmation before public deployment"
+        ]
+      }
+    },
+    {
+      "id": "li2026sad",
+      "doi": "10.1109/tcbbio.2026.3674362",
+      "slug": "sad-sparse-aware-diffusion-2026",
+      "summary": "A sparse-aware diffusion framework for completing missing genes in single-cell expression profiles.",
+      "contentBasis": "abstract",
+      "motivation": "Single-cell foundation models need broad gene coverage, but most scRNA-seq datasets measure only 10–12k genes and contain many technical zeros. Existing imputation methods often assume independent and identically distributed missingness, which is unrealistic.",
+      "method": "SAD treats gene completion as a diffusion-based generation problem. It learns to recover missing expression entries, correct sparsity-distribution bias, and expand an expression profile toward more than 30k consistent genes for downstream foundation models.",
+      "contributions": [
+        "Defines gene completion as a task distinct from conventional imputation.",
+        "Uses a diffusion framework designed for extremely sparse single-cell data.",
+        "Supplies broader and more consistent gene profiles for foundation models."
+      ],
+      "results": "The abstract reports improved completion performance over existing methods across multiple metrics, with especially large advantages at missing rates above 80%.",
+      "abstract": "Single-cell RNA sequencing is entering an era of foundation models that accept the complete gene atlas as input, yet most datasets cover only 10-12k genes and contain technical zeros. SAD is a diffusion-based framework for gene completion under extreme sparsity. Unlike imputation or reconstruction methods that rely on an i.i.d. assumption, it can generate missing gene entries, correct sparsity-distribution bias, and provide inputs of more than 30k genes. Benchmarks show improved performance, particularly when missing rates exceed 80%.",
+      "figure": {
+        "src": "/papers/local-figures/sad-figure2.webp",
+        "width": 2000,
+        "height": 1134,
+        "alt": "Gene completion workflow of the SAD diffusion model",
+        "caption": "Figure 2. Gene completion workflow of the SAD framework.",
+        "credit": "Li et al., IEEE TCBB 2026, Figure 2",
+        "sourceUrl": "https://doi.org/10.1109/tcbbio.2026.3674362",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/SAD"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Europe PMC abstract (PMID 41838515); Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "zhang2026deep",
+      "doi": "10.1016/j.neunet.2026.109005",
+      "slug": "scdpr-drug-perturbation-2026",
+      "summary": "A generative framework for predicting single-cell transcriptional responses to drug perturbation and separating causal drug effects.",
+      "contentBasis": "abstract",
+      "motivation": "Drug responses vary substantially across cells, making it difficult to infer direct drug effects from heterogeneous single-cell transcriptomic profiles.",
+      "method": "scDPR combines an attribute-adaptation module for cell-specific transcriptional shifts with causal graph learning and optimal transport. Drug molecular features, dosage, and cell attributes are integrated into a latent representation used to predict perturbation responses.",
+      "contributions": [
+        "Predicts drug-perturbed single-cell transcriptomic states.",
+        "Separates direct drug effects from confounding influences using causal graph learning.",
+        "Integrates molecular, dosage, and cell-specific information in one framework."
+      ],
+      "results": "Evaluations on L1000 and sci-Plex3 report better prediction of responses to unseen compounds and pathways than selected state-of-the-art methods, with shorter training time and fewer optimization rounds.",
+      "abstract": "Accurate characterization of cell-specific drug responses is important for linking molecular mechanisms to therapeutic variability. scDPR predicts drug-perturbed single-cell transcriptomic states and decomposes responses into causal effects. It combines an attribute adaptation module with causal graph learning and optimal transport, integrating drug features, dosage, and cell attributes. Evaluations on L1000 and sci-Plex3 report improved prediction for unseen compounds and pathways, along with shorter training time and fewer rounds.",
+      "figure": {
+        "src": "/papers/local-figures/scdpr-figure1.webp",
+        "width": 2000,
+        "height": 1941,
+        "alt": "Overview of the scDPR drug perturbation response framework",
+        "caption": "Figure 1. Overview of the scDPR framework.",
+        "credit": "Zhang et al., Neural Networks 2026, Figure 1",
+        "sourceUrl": "https://doi.org/10.1016/j.neunet.2026.109005",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Europe PMC abstract (PMID 42019216); Crossref and ORCID metadata",
+        "missing": [
+          "Reusable method figure",
+          "Full-text verification"
+        ]
+      }
+    },
+    {
+      "id": "li2026comet",
+      "doi": null,
+      "slug": "comet-class-consistent-metacell-2026",
+      "summary": "A few-shot single-cell annotation method that learns class-consistent discrete codebooks and constructs high-purity metacell prototypes.",
+      "contentBasis": "full-text",
+      "motivation": "Few-shot single-cell annotation is limited by scarce labels for rare cell types, sequencing-induced technical noise, pronounced intra-class representation bias, and weak inter-class separability. Most existing methods rely on large-scale labeled data and generalize poorly when only a few labeled cells per type are available.",
+      "method": "COMET introduces class-consistency constraints into single-cell quantization. Each cell type is assigned its own codebook, so the latent space stays discretized and mutually decoupled, and continuous single-cell representations are purified into high-purity metacell prototypes. For annotation, a lightweight supervised classification head is trained on metacell prototypes from the support set and applied to the query set.",
+      "contributions": [
+        "Introduces class-consistent quantization that keeps separate, structured latent code domains for each cell type.",
+        "Constructs high-purity metacell prototypes by purifying continuous single-cell representations.",
+        "Enables accurate prediction and stronger rare-cell recognition in few-shot annotation."
+      ],
+      "results": "On eight real-world single-cell transcriptomic datasets, COMET outperforms non-quantized few-shot annotation baselines under limited supervision, with the largest gains on rare cell recognition. The purified metacell representations also show better structural consistency in clustering evaluations than raw single-cell representations.",
+      "abstract": "Single-cell annotation plays a critical role in developmental biology, disease research, and precision medicine. However, most existing approaches rely on large-scale labeled datasets for supervised training and exhibit limited generalization in few-shot settings due to the scarcity of rare cell samples, sequencing-induced technical noise, pronounced intra-class representation bias, and weak inter-class separability. To address these challenges, we propose COMET, a few-shot single-cell annotation method based on class-consistent single-cell quantization. By introducing class-consistency constraints into the quantization process, COMET maintains mutually decoupled and structured latent code domains for each cell type, discretizes continuous single-cell representations in latent space, and constructs high-purity metacell prototypes through representation purification. This process effectively compresses redundant intra-class variation while amplifying key discriminative features, endowing metacells with stronger transferability and prior representational capacity under few-shot learning scenarios. Extensive experiments on eight real-world single-cell transcriptomic datasets demonstrate that COMET significantly outperforms non-quantized few-shot annotation baselines under limited supervision, particularly in rare cell recognition tasks. Moreover, the purified metacell representations exhibit superior structural consistency in clustering evaluations compared with raw single-cell representations, validating the robustness and reliability of COMET in complex single-cell analysis settings.",
+      "figure": {
+        "src": "/papers/local-figures/comet-figure1.webp",
+        "width": 2000,
+        "height": 774,
+        "alt": "Overview of the COMET few-shot single-cell annotation framework",
+        "caption": "Figure 1. Overview of the COMET framework.",
+        "credit": "Li et al., IJCNN 2026, Figure 1",
+        "sourceUrl": null,
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/lilyway18/COMET"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Author-provided camera-ready PDF; abstract, method, and figure checked",
+        "missing": [
+          "Publisher reuse confirmation before public deployment"
+        ]
+      }
+    },
+    {
+      "id": "zhang2027gene",
+      "doi": "10.1016/j.neucom.2026.135033",
+      "slug": "gene-signature-bidirectional-retrieval-2027",
+      "summary": "A gene-signature-guided framework for bidirectional retrieval between single-cell expression profiles and cell-type descriptions.",
+      "contentBasis": "full-text",
+      "motivation": "Existing single-cell methods mainly predict cell types from expression profiles and provide limited support for reverse retrieval from a known cell type to matching cell populations. A biological knowledge bridge is needed to align expression, signatures, and labels.",
+      "method": "scBRF builds a three-modal semantic space using separate expression, gene-signature, and BioBERT text encoders. Dual-path contrastive alignment links expression to labels and gene signatures to labels, enabling both forward annotation and text-driven reverse retrieval.",
+      "contributions": [
+        "Builds a unified semantic space for expression, gene signatures, and cell-type text.",
+        "Supports both forward annotation and reverse population retrieval.",
+        "Uses gene signatures as an interpretable biological bridge."
+      ],
+      "results": "Training and validation used more than one million cells. The study reports 4.9% higher accuracy and 10.7% higher F1 than scGPT on tissue-related forward-retrieval datasets, with accurate reverse retrieval of target cell subpopulations.",
+      "abstract": "Single-cell type annotation traditionally predicts cell types from gene expression. scBRF is a cross-modal bidirectional retrieval framework that uses gene signatures as a bridge between gene expression profiles, signatures, and textual labels. It supports standard forward annotation and text-driven reverse retrieval of target cell populations. On more than one million cells, scBRF improves accuracy by 4.9% and F1 by 10.7% over scGPT on tissue-related forward-retrieval datasets, while aligning reverse-retrieval results with interpretable gene signatures.",
+      "figure": {
+        "src": "/papers/local-figures/scbrf-figure2.webp",
+        "width": 2000,
+        "height": 1503,
+        "alt": "Architecture of the scBRF bidirectional retrieval framework",
+        "caption": "Figure 2. Schematic diagram of the scBRF framework.",
+        "credit": "Zhang et al., Neurocomputing 2027, Figure 2",
+        "sourceUrl": "https://doi.org/10.1016/j.neucom.2026.135033",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": null
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 2",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Author-provided PDF; abstract, method, results, and figure caption checked",
+        "missing": [
+          "Publisher reuse confirmation before public deployment"
+        ]
+      }
+    }
+  ]
+}

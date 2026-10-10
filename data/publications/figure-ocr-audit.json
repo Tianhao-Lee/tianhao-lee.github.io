@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-10-10T10:10:48.231Z",
+  "images": [
+    {
+      "file": "local-figures/alignment-figure2.webp",
+      "confidence": 47,
+      "chars": 670,
+      "words": 151,
+      "hasFigureCaption": false,
+      "hasLongParagraph": true,
+      "text": "FT EE R&S A A aT eR ERE\n| pFESssEeSeSinSososeoso |\n| : | !\n! e i ' Latent Space | |\n! scRNA-seq Expression : Le | scRNA-seq Expression |\n\nCEST — SEE EREEE | Sequence — fC Sequence — C—\n| Encoder - : | Align : _ Decoder Loss '\n! 8 nn IR a] =) !\n\n' eacher |\n\n; PEs |\n| i ! |\nI scATAC-seq Expression : [mse : ion |\n! Sequence i i i E Sequence scATAC-seq Expression !\n| —— HHT Encoder [mJ =] : Decoder Ny gusnsasasasasa ly\n[5] : — i [=] [=] |\n| hab atte hi I\n, : ff Sequence Embedding f@ Visible Sequence Token (5) Masked Sequence Token i i (5 Sequence Embedding (§ Visible Sequence Token Masked Sequence Token :\nRte eget eso each oops to AR leases lglg se inst eclipse gigi"
+    },
+    {
+      "file": "local-figures/bcdb-figure1.webp",
+      "confidence": 48,
+      "chars": 785,
+      "words": 167,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "CY\nA Feature Encode Module Non-TFBSs\n)\n—_— —_ Backbone Network Module\nv TFBSs\nB Feature Encoded by DNABERT C\nS® MaxPooling Flatten Linear  Sigmoid\n0B] \"0\nd we\nae\nTUF Maxbooling Flatten Liner  Sigmoid\n_— Feature X IB — i NY a Pisa dy 3)\nMulti-head ] B\nDual-Branch Layer\nBITES] [Te [Be] [Te] [Te ; | | : H Convolution . mean\n(oe) 3] ~ 0080 ol pe To\nTokenize Sal halla) ! BatchNorm a eae\n= mio =\n\nDNA Sequence TCTATACG.... TCTCTTGAA i 1\n\nDNABERT Layer BILSTM Layer J CNN Layer\n'D Downstream Analysis\ni Feature Visualization Cross-cell line prediction Interpretable Analysis Motif analysis\no hot } . <3 = |\namc | YW xx B= dele,\nD S . D x 7] z. xYVOz<NIVA Saxo :\ni - “ey ig . ® (@) y F3 = |] NhRewvereoogzpozRRERSE 1\n, PLY > [e] o I ) H\n: Fe, 3 ( | ! |\nhal od JE, :\nCell type DNA Sequence :"
+    },
+    {
+      "file": "local-figures/clsfdti-figure2.webp",
+      "confidence": 53,
+      "chars": 320,
+      "words": 70,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "Drug Similarity Matrices (N XN)\nN Drugs CNN Block for Drugs a\n- Drugs Features\n=\na Co pa Come\ni — 8» Hi — | |—lE—\nil\nSAN\nNEXT\nvor | Sr Woe —\n[i oy\nFC ] = © i |\niad Ing or --= > | Protin Conrasive Module |\n[ix] Proteins Features\nN Proteins CNN Block for Proteins\n[&3) Concatenation [ow]\nProtein Similarity Matrices (N xN)"
+    },
+    {
+      "file": "local-figures/leap-figure1.webp",
+      "confidence": 46,
+      "chars": 979,
+      "words": 226,
+      "hasFigureCaption": false,
+      "hasLongParagraph": true,
+      "text": "a\n| DOMME rrwone wooo > ouster}\nents ania iam mm amiroms ne om on xm fom mamiyoms om, mmm ome em Bm, mm ft, st mm mt Jom om mei i oma me 1\nleo 10014 > B a DNA-LM\nEnbeddiag n Language model A Stacked tower Stem Tower Final modele Predict Block\nDOMDMC wren | r, Te | Gen) | | gen) |e | Glave | Output\nInput | | J\nC16, 1091) (16, 1008, 209) (16, 200, 1001) (16, 200, 1001) TT ae 1\nPerformer = = resolution \\ \\ =)\n4 a x v 8 Bon 8 Boe = NA 7A R\nBORG T7rR0009 gx \\ SEN a\nJoie) ooooe { d se ei 200 4d\n== SR <2 BatehNorm1d Y REV Sh ANSE)\n000000 7 Zac a YS\nsass (500000 U J \\/\nPerformer encoder Convld RCon Block MaxPoolld Flatten Linear\nLEAP\nMultiple tasks\nb ¢ TFAP4_DBD d\n| Gy -\nma i wl Iu\n— — J Ay Ii VAT - LIN HE PEST\nCo ew\nCw —— . | a (LER\n© — (elt. oo fcc Alt Al ] SHE\nee — CS ———] 0 Eo JB. 1\nACA ° » © «© 0 100\nThe same sequence is divided into different scale Settings Sequence motifs are extracted based on attention | Mutation experiments obtain contributions from each position"
+    },
+    {
+      "file": "local-figures/longtail-figure2.webp",
+      "confidence": 54,
+      "chars": 499,
+      "words": 116,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "senses sss YZ He eB Eel ¥\n1\n! (a) Distribution-Aware | | (b) Fuzzy Guidance\n1 Conditional Generation \\ Base Extractor\n. (Sec. 3.2) n (Sec. 3.4) 1\n© “B Cell” 1\n1 1\nVT “No.3030” i (1) Expression-Aware 1\nI n Knowledge Distillation\n1 TA =] ! | (Sec. 3.3) |\nEd |\ni rn iL Inc \\\np remental\nLg MTT ie | (#8)\n| &) f |\nR i PE ——\neg pe EE [ Annotated 1!\n1 [2 Conditional Encoder axe Base / Novel Features | Novel Extractor ,  ® BCell i\n1 1\ni (In Data Integration (©)@) Base / Novel Cell Types ' _ © oT Cell o i"
+    },
+    {
+      "file": "local-figures/peft2023-figure1.webp",
+      "confidence": 54,
+      "chars": 654,
+      "words": 155,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "R= Initial model (@,) Expression matrix Pre-trained model (@)\n= mm» CEE\nSo\nHS iE Bm\nby em wm —> |\n® mm EEE\n= ~~ — HE SE EN \\\nH EN\n= — | 5E* BE |\n5 gem” slime\" |\nhi PEN NH En\n< Hm [| (Pre-trained scBERT)\n— =\nAddition\n- bd [| Frozen parameters P\ng ic use o = [ill\n>] é 0 ‘unable parameters\nen\n= = Specification\nQ's ’ ’\n1\n= —> =\nz2||lo=lll |= 6—e o = [Ill\ng EE Pre-trained model Parameter-efficient tuning Reparameterization\n£ , |\n= 0 = I\n~~\nT\n1. Performance evaluation 1 2. Compatibility evaluation\n1\nome {= oll Ii |\na o%% WV I\n@ vl 1\nz =o alin 1\nx] 1\ng . RO lo 0 |\n< mo |\n1\n1\n+ Performance  - Convergence Simul S ial\n- Efficiency \\ 1imultancous equentia |"
+    },
+    {
+      "file": "local-figures/peft2024-figure1.webp",
+      "confidence": 60,
+      "chars": 959,
+      "words": 180,
+      "hasFigureCaption": false,
+      "hasLongParagraph": true,
+      "text": "Large-scale pre-train Parameter-efficient fine-tuning Analysis\nUnlabeled data 1. Performance |} 2. Compatibility\n#1 Erozen o= 1 Pre-trained model evaluation , evaluation\nparameters\n1\n: i 118\nparameters 7 Parameter-efficient M 1 Lo\n! 0=0 fine-tunin ° , ®\n. = g 1\nExpression matrix Pre-trained JE\n1\nFn” Br |, model (0) 3. Novel cell type + 4. Interpretability\n\" i Identification ' investigation\nRE LF oC >\nru fu o'=0| (o'=0 | (o'= ll TN Xe\n- 5) 1\nGene matrix SV ae : R . a . =\neoisloed st BERT) Addition Specification Reparameterization ! (§\nEY\n. og ogo . . . !\ni 1. Performance evaluation 2. Compatibility evaluation 3. Novel cell type Identification 4. Interpretability investigation v\n! 1\n! 1\nA JE ® om vy) pil QO cag |\n: : Lo\n= go\n1 i 1 1\ni on Qn\ni Potential marker gene 1\n1 + Internal and external validation + Simultaneous combination © Novel Known Attention score ;\nH + Efficiency analysis * Sequential combination + Leave-one-dataset-out strategy ]\n\\ ne"
+    },
+    {
+      "file": "local-figures/review-figure3.webp",
+      "confidence": 29,
+      "chars": 441,
+      "words": 100,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "Marker gene-based methods dentifying cell marker genes SNE visuslization aad marker-based\n[Es a ER\na co 2 _7g®.\n08s 99 a 0 I\nobo T —| Fa | —| RE (of\nfre Ees Gow § a J seco \\le®\nSL a [HI ——\n[Ao fa fd\nTT\nEre\n_— Col Refroce cll Sembcy Condided cll. ~~\nay\nRe ne Za N= TONE ie rm\ncorreation of data-driven sppeosches Ee — em —\" results by reference methods.\n080 00 apse sx o\nS85 ool, TX\nEoSGESS Seren Jr —— tense\nBa Sos me Juss\nabs 4 a en re pt i"
+    },
+    {
+      "file": "local-figures/sad-figure2.webp",
+      "confidence": 50,
+      "chars": 1163,
+      "words": 277,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "(a) SSSE: Sparse-Space State Encoder (b) DRDD: Dynamic Radiation-Domain Decoder\n+ = (Cave) | | |\nD\n— seR : s, € RI% —\nTm 5 5 parse Zo\n— Kantorovich Solve\nChebyshev\nol 1 =F) Sparse i IR Indexing\nState Projector |] e, €R rl\nLl\ni LI Chebyshev ec RP Ts € RP\n2g\" m Indexing | re) m\nI - 8 |R:| Inverse Chebyshev\nInverse Masking | pn € RP, Be RPP Re Sr € R Indexing\nQ Database of ye RExD\nCell Prototypes\n ——— —————— ———\nFee ee EE EE EE EE CC CT mm mem ma sme mr ES mm me ==\n| Ea \\ _ 1\n1 _ BR —— pe 1\na , U-Net Pred U-Net H\n! | 4 nput redicting | Resamplin, Inferencin; !\n' I | sy -. DRDD ei) 4 ad hs 8 '\nCB 1 (oo 2)\n1 [Sle he] Lrrssda :\n| PS % |\n| zy i) 2 Ty |\ni Partial Data Explanation 11 Symbol Explanation 11 Gene Reordering Forward and Inverse Chebyshev Indexing 1\n| Nl 1\" |\n| Nl 1\" |\n| Nl \" ] 1\n' ' — Inference Flow —> Mask Flow i L™ he a” BD i\n' Tm #g ' HE Correcting Flow ~~ ——> Reference Flow : h Io a i) = H\n| Nl 1\" uu Te) |\n! 11 —> Encoding Flow ~~ © + Masking / Coupling oy | Bl 1\n' Masked Prediction of : ; 3 . : , Reshaped Reordered Radiation ,\nf ScRNA-seq ~~ Corrected scRNA-seq | | —> Decoding Flow Averaging 11 SCRNA-seq ScRNA-seq Domain Vectorization f"
+    },
+    {
+      "file": "local-figures/scbrf-figure2.webp",
+      "confidence": 50,
+      "chars": 1415,
+      "words": 340,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "(A) Dataset integration (B) Construction of gene signatures\nEEE raw gene\na TTT Tissues on =f expression —(( preprocess| — | Identification\n| ly rawgene [| | matrix\nmom expression LLL] Astrocyte\n- FCM matrix Sh TY Gene Signature Build Qo\numan amt Sorting and grouping 5) o ARR3\n5 mal Diseases Na, (Beta cell 7 Cone cell ® Astrocyte x»\n——— [TlH raw gene a RNA — bq XY\n| [ [lif expression 5 x\n. r 11 : Dataset Va\nDiseases BEER matrix Cone cell\nBeta cell Cone cel\nGS1  GS2 GS1  GS2 GS1 GS2\n(C) Core architecture of ScCBRF (D) Downstream analysis\nInput Layer Encoder Layer Embedding Space\n3 a. 5 Gi oirfei] + |G1T| ) N e ©\n] i '\n=== ERE anlar oi Jom | |g ® | 2\nHEN ~ [gE | 3 (8, +48) 2 etal\nBo ' £3 |. . EE 35 2 fn Tho) | r-o o @ g eta ce\nEEEN ! i ‘ a = od ® 5\nWEE AC |]:\nsc -seq Data ; ' Gene Vector Similarity Matrix | ! Cone cell\nJ i Ti |\n1 1 — - Wu .\n! =] i I Forward Retrieve\nACTA2+ : s [ a | * Logit_Scale Lota\narterial EC ] g i | Lgene-text + Lsignature-text 1 ®\n! - 1 |\nCell Type ' ' ™ | — ® ® °\n! i Text Vector ! 0 °\n| H |\n—yeveyern BE ! s SITISITI| ~ [SiT p Cone cell ® ®)\n[hee H| 2. 0 Lg | = /\nCea Hi | g =o S$: S2Ti|S2T2| 5. TN Sa = ()\nam [sees Hl —> |€ & S| — — | i £55 £0 po © @y\n[_cLDNis Hl ! eo E ®f | ) : a8 = La Lak |\nCRE | h= ARAL 0e® 9\nGene Signature  '._L——___, | % SKTI|SNT2 [Sn T | (0 (o\ni Gene signature Vector Similarity Matrix : -\neeeeeieeeeeeeeee ooo ____Pre-trained Encoder ! Reverse Retrieve"
+    },
+    {
+      "file": "local-figures/scdpr-figure1.webp",
+      "confidence": 59,
+      "chars": 1351,
+      "words": 313,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "a\n@® Cell Informations = pm ~lalt og i ! I I ] IE,\nOL :\nTET Perturbed\nJB Drug Structures Wd SCE] a go 82 Cd\npa) & transcriptional transcriptional a | CG KR° © Cell Type 2\n© Cell Type 3\ng So &Re © Coll Types\nA Drug Dose (tm) Primitive gene state Up regulated gene Down regulated gene =) © Cell Type\nUMAPI1\nb Reconstruction loss\n2\nKLLoss Embedding K : Embedding K\n7 Pd tt ld rrr |\nEmbedding 1 Embedding 1 | | |\nGene 1 Gene 1 il Gene 1 il Gene 1\n| — LH || _H .|\nGone |] | cenemT PB | one JE Gene M\na aS, AT Attribute\nSy Tg Embedding N=\nDecoder\n@® § =| © Embedding re Gene 1 |\nCell Type Q = /O\\ Embedding 1 |\n2 | Fi Pe ha A val Gene 1 | oil Gene YN\nAy LH KoPe il SN\nSMILES | \\o/ > ed\nDose H Gene M |] =\nJB X & Attribute C To a Attribute\n4 3 Embedding & ¢ Embedding\nc Attribute Adapter d Causal Graph Learning\nDrug Factors\n— I ne ;\na inf » lz — fi(zi)ll, 9\nmE Attribute t nd ; So\n| | Embedding Wi(t-1) | —= Linear Find [i] sch that we EE 38 Tntervened Drug\nt 110 Feel DAG loss Propagated Effects\n— l 2\nRecep [fel Tims owes I\n(SORTS) t a —\na ee } rad Cell Factors\nSot | wel en @\nA ECR Weighted Matri\nwae) [| = Linear dala > gh = g\ny ; 4 mm\n= ‘ OT loss u\nWi(t-1) | —- GRU\nto\nDrug Attribute Cell Attribute — } H(1) Zoaa= fr (2) —: Important Causes ~~ —>: Original Causes\n--» : Broken Causes (Cut Dependencies)\nDrug Attribute = drug fingerprints*log10(dose +1)"
+    },
+    {
+      "file": "local-figures/scmoanno-figure2.webp",
+      "confidence": 49,
+      "chars": 862,
+      "words": 226,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "PE a i Ee iat EEN\nI [a |\n|\ni NeUTS | ! First-round annotation: pretrain step |\n: x\n1\nCells i TT] 3 1\n| i Chine | —— a) icc |\nnl CEH — Ce — mom\n00000 Vs 3\n¥ Softmas, IEE CA Cell types,\n1 = 1\n| \" 2 I\nll I 2 1\n| \" z\n! | Filtered HVGs’ £0\n| scRNAseq || gene expression — {imean) = Po\n1 .\n! gene expression | ! matrix Em\n! matrix i Ground |\n| i! !\n| ! A. Trurh\nca Come ER | OD own TE\n| + matrix (PCA) feat . 2\n' i eature matrix s\n' Gene-level g |\n1\n| ! 0 Q !\nny Softmax STAY 2 !\n! bi — CRs — mm |\n| I 75 a |\nt ra FI omome\n| |\nnN Classfication\ni Lo\ni FZ\n| [I |\n! 1+ Second-round annotation 1\n| i! @) !\n1! |\n| hy CERO ... [Transforme al] ,\n| [i Subvectorization H Expression Learned CER [mE\n| _ _ _  —— _— |\ni | 1 Embedding iH Embedding encoder Representations EX Cell types !\n| SCATAC-seq | Oo\n1 | .\n! peak counts ! Query Classfication !\n! matrix 1 feature matrix :\nES"
+    },
+    {
+      "file": "local-figures/sctchcn-figure1.webp",
+      "confidence": 45,
+      "chars": 1653,
+      "words": 425,
+      "hasFigureCaption": false,
+      "hasLongParagraph": false,
+      "text": "Pe i ate it TE\n‘A scRNA-seq Expression ee '\n! CAT Tr rrr) —» CAI rr rrrey i i —> (TITTIITITrreey +\n! res Sequence E : Student : i Sequence i Loss |\ni z ig Encoder i | scLinformer | ! Decoder 2 !\nZiE 8 | 8 8\nlig - | | | |\nEE Thisisa | il - i C@ Scawncs Embading 8 Groph Embedding} |\n1 | HE EEESEEEEEEN scRNA-seq Gene : : : : : equence Embedding rap. mbedding : '\nBEE aan EmeEE § —> Expression Matrix | : Meda i i f Visible Sequence Token  g53 Visible Node Feature | |\nAs Emma EEE : : scLinformer : : [—-\nRY H i i [J Masked Sequence Token Masked Node Feature! 1\ni | Maximum Spanning Tree Algorithm n : 1 . Neen eee eeeen\n| H Constructs Cell-Specific 3: Knowledge Hn 1\n! v Highly Correlated Networks + Distillation | |\n| | . |\n! {Ts PN fais] an Ed i { toPre-traina | i Graph i -—, fm of ay\nH . I 1\n| fom Lo = __, Gm Lom fess] Encoder scLinformer i Decoder Loss Zen _-—\nh a a [5] H Model : [5] & a= !\n| 0) 5 Vas] 0 ~ 59 Vas] I 0 55 h\ni fee] Global Learn Layer fas] |\n! 1\ni Fre EEE PE EEE 0 i= <\nh In i I\n(za) fr I\nFilty Cosi C t = i KAN: / i\n| —, — ry fw at Kolmogorov-Arnold \" a |\n, HVGs Similarity Network (Ge) n Networks am ft\n(mai | }\n| (aan) = [| U |\n| > i = |\n! . } . . | AN\n! Simularity Cell-Specific Highly | [7] . 2 \" ; / Hi !\ni scRNA-seq Data Cells Feature Matrix Correlated Network ny f : / in\nEm ee ee ee ee ee ee ee 1 H A oS AX] \\\n”» = 1 H 20 1\ni NYT | PLAY Sait\nCc i hans S| AAA |\nTN ny 1 LSA\n[ ms) Student KAN = \" I bh AA) Boo |\n| IC) | scLinformer | ~~ | Predictor | [1 H /5 o—{ TERY, To hf ® FEE ,\n/ | 6T Bud a\nFX 1 od - Nog, TT | cane |\n' Single Predicted N=} 7 Vectors ) pS |\ni Cell ScRNA-seq Data Query Feature Cell Types i (] \" Rit |\nNe"
+    }
+  ]
+}

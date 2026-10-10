@@ -1,0 +1,82 @@
+type = "card"
+title = "Labs"
+description = "The two research groups I have worked with."
+
+[[items]]
+title = "Sichuan University"
+subtitle = "Basic Teaching Building B318 · Visual Computing Lab"
+image = "/labs/zhu-min.webp"
+link = "https://scuvis.org"
+linkLabel = "Lab homepage"
+content = """
+Prof. **Min Zhu** (朱敏) — professor and doctoral supervisor; founding director of the Visual Computing Lab.
+
+#### Position and education
+
+- Currently Vice Dean, School of Excellence Engineers, Sichuan University
+- Formerly Vice Dean and Deputy Party Secretary, College of Computer Science
+- Ph.D. in Applied Mathematics, Sichuan University (2004)
+- Visiting scholar, Case Western Reserve University (2013–2014, CSC-funded)
+- Research: visual computing, visual analytics and human-computer interaction, bioinformatics
+
+#### Selected projects
+
+- Heterogeneous graph visual analytics for disease–regulatory factor association — NSFC General Program (2021–2025)
+- Monitoring and early warning of major operational safety risk sources at airports — National Key R&D Program, Transportation Infrastructure (2023–2026)
+- Multimodal agricultural big-data visualization platform — MOST Central Guidance Fund for Local Science and Technology Development (2021–2024)
+- Large models for mining resource development and production — Chengdu Key R&D Support Program (2025–2028)
+- Green infrastructure change detection and visual analytics from remote sensing imagery — Chengdu Key R&D Support Program (2023–2025)
+- Industry and research-institute collaborations including Dongfang Electric
+
+#### Honors and service
+
+- Baosteel Outstanding Teacher; Sichuan Academic and Technical Leader; Sichuan Provincial Expert with Outstanding Contributions
+- Sichuan March 8th Red Banner Pacesetter; Sichuan Provincial Teaching Master; Sichuan Overseas High-Level Talent; Chengdu "Rongcheng Talent Plan" Education Leader
+- Two provincial/ministerial Science and Technology Progress Awards; one national first prize and seven provincial awards for teaching achievement
+- CCF Distinguished Member; standing committee member of the CSIG Technical Committee on Visualization and Visual Analytics
+- Council member, Sichuan Association for Artificial Intelligence; member, Sichuan inaugural AI Standardization Technical Committee
+
+#### Graduate training
+
+- 123 master's and doctoral students trained as of July 2026
+- Sichuan University "Dewo Qunfang" model team for educational culture; Top 100 Student Collective, 2025
+- Recent work at CVPR, AAAI, ECCV, ICASSP, and ICME, and in Medical Image Analysis
+"""
+
+[[items]]
+title = "Chengdu University of Information Technology"
+subtitle = "Xinda Building B312 · Prof. Yongqing Zhang's Group"
+image = "/labs/zhang-yongqing.webp"
+link = "https://jsjxy.cuit.edu.cn/info/1063/1815.htm"
+linkLabel = "Faculty profile"
+content = """
+Prof. **Yongqing Zhang** (张永清) — Ph.D., professor and doctoral supervisor.
+
+#### Position and education
+
+- Currently Deputy Director, Office of Development Planning, and Deputy Director, Center for Teaching Evaluation, CUIT
+- Ph.D. from Sichuan University; jointly trained at the University of California, San Diego
+- Research: artificial intelligence and data mining, meteorological environment and health, meteorological medicine, bioinformatics
+
+#### Selected projects
+
+- Deep learning architectures for TFBS and non-coding variant association — NSFC General Program
+- Microbial–metabolite association mechanisms in ischemic heart disease via multi-omics fusion and machine learning — NSFC General Program
+- High-throughput data and deep learning for gene regulatory network construction — NSFC Young Scientist Program
+- Multimodal data fusion for intelligent medical decision support — Sichuan Natural Science Foundation General Program
+- Computational analysis of transcription factor and non-coding variant relationships from multi-omics data — Sichuan Natural Science Foundation General Program
+- Spiking neural network learning algorithms driven by membrane voltage — China Postdoctoral Science Foundation
+
+#### Honors and service
+
+- Sichuan "Tianfu Qingcheng Plan" young talent
+- Lead of the national first-class undergraduate course *Computer Organization Principles*
+- Executive committee member, CCF Technical Committee on Bioinformatics; CCF Technical Committee on Computer Applications; CCF Technical Committee on Databases
+- Member, CAA Technical Committee on Intelligent Health and Bioinformatics
+- Member, CAAI Technical Committee on Bioinformatics and Artificial Life; member, CSBE Technical Committee on Computational Biology and Bioinformatics
+
+#### Research output
+
+- Over ten national and provincial research projects completed
+- Over 60 SCI-indexed papers; more than ten granted invention patents
+"""

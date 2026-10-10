@@ -1,0 +1,374 @@
+{
+  "generatedAt": "2026-10-10T08:11:06.706Z",
+  "orcid": "https://orcid.org/0009-0007-2952-7788",
+  "authorName": "Tianhao Li",
+  "source": "ORCID public API, cross-checked against Crossref DOI metadata",
+  "note": "This file contains automatically fetched metadata. Curated fields such as selected, preview, PDF, code, and description are maintained in content/publications.bib.",
+  "works": [
+    {
+      "orcidPutCode": 226013092,
+      "title": "A gene signature-guided bidirectional retrieval framework for single-cell RNA-seq analysis",
+      "authors": [
+        "Yongqing Zhang",
+        "Zhengxiao Huang",
+        "Tianhao Li",
+        "Chenpeng Wu",
+        "Aochen Zhang",
+        "Ximei Luo",
+        "Quan Zou",
+        "Zixuan Wang"
+      ],
+      "year": 2027,
+      "month": 1,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Neurocomputing",
+      "volume": "707",
+      "issue": null,
+      "pages": "135033",
+      "doi": "10.1016/j.neucom.2026.135033",
+      "url": "https://doi.org/10.1016/j.neucom.2026.135033",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 211835355,
+      "title": "Deep generative framework for modeling single-cell drug perturbation response",
+      "authors": [
+        "Yongqing Zhang",
+        "Chenpeng Wu",
+        "Tianhao Li",
+        "Zhigan Zhou",
+        "Zhengxiao Huang",
+        "Aochen Zhang",
+        "Zixuan Wang"
+      ],
+      "year": 2026,
+      "month": 10,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Neural Networks",
+      "volume": "202",
+      "issue": null,
+      "pages": "109005",
+      "doi": "10.1016/j.neunet.2026.109005",
+      "url": "https://doi.org/10.1016/j.neunet.2026.109005",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 204863433,
+      "title": "Distribution and expression aware retrospective learning for single-cell long-tailed class-incremental annotation",
+      "authors": [
+        "Tianhao Li",
+        "Zixuan Wang",
+        "Chenpeng Wu",
+        "Zhengxiao Huang",
+        "Yixin Xiang",
+        "Yuhang Liu",
+        "Quan Zou",
+        "Naifeng Wen",
+        "Yongqing Zhang"
+      ],
+      "year": 2026,
+      "month": 5,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Applied Soft Computing",
+      "volume": "193",
+      "issue": null,
+      "pages": "114745",
+      "doi": "10.1016/j.asoc.2026.114745",
+      "url": "https://doi.org/10.1016/j.asoc.2026.114745",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 212082596,
+      "title": "SAD: Sparse-Aware Diffusion Model for Single-Cell Gene Expression Completion",
+      "authors": [
+        "Tianhao Li",
+        "Yixin Xiang",
+        "Zixuan Wang",
+        "Mengwen Liu",
+        "Quan Zou",
+        "Yongqing Zhang"
+      ],
+      "year": 2026,
+      "month": 5,
+      "day": null,
+      "type": "journal-article",
+      "venue": "IEEE Transactions on Computational Biology and Bioinformatics",
+      "volume": "23",
+      "issue": "3",
+      "pages": "1200-1213",
+      "doi": "10.1109/tcbbio.2026.3674362",
+      "url": "https://doi.org/10.1109/tcbbio.2026.3674362",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 201023440,
+      "title": "LEAP: Long sequence enhancer activity analysis and prediction framework",
+      "authors": [
+        "Jia He",
+        "Hongjiang Lu",
+        "Tianhao Li",
+        "Yuhang Liu",
+        "Yongqing Zhang",
+        "Shuang Zou"
+      ],
+      "year": 2026,
+      "month": 4,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Computational Biology and Chemistry",
+      "volume": "121",
+      "issue": null,
+      "pages": "108850",
+      "doi": "10.1016/j.compbiolchem.2025.108850",
+      "url": "https://doi.org/10.1016/j.compbiolchem.2025.108850",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 205611308,
+      "title": "Contrastive learning in both structure and function spaces improve drug-target interaction prediction",
+      "authors": [
+        "Yongqing Zhang",
+        "Le Chen",
+        "Hong Luo",
+        "Tianhao Li",
+        "Shuwen Xiong",
+        "Zixuan Wang",
+        "Quan Zou",
+        "Wenqian Zhang"
+      ],
+      "year": 2026,
+      "month": 2,
+      "day": 2,
+      "type": "journal-article",
+      "venue": "BMC Bioinformatics",
+      "volume": "27",
+      "issue": "1",
+      "pages": null,
+      "doi": "10.1186/s12859-026-06377-4",
+      "url": "https://doi.org/10.1186/s12859-026-06377-4",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 188595353,
+      "title": "Supervised pre-training for feature extraction in cell type annotation of single-cell multi-omics data",
+      "authors": [
+        "Yongqing Zhang",
+        "Tianhao Li",
+        "Yuhang Liu",
+        "Hong Luo",
+        "Yugui Xu",
+        "Zixuan Wang",
+        "Quan Zou"
+      ],
+      "year": 2025,
+      "month": 11,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Applied Soft Computing",
+      "volume": "183",
+      "issue": null,
+      "pages": "113585",
+      "doi": "10.1016/j.asoc.2025.113585",
+      "url": "https://doi.org/10.1016/j.asoc.2025.113585",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 197082662,
+      "title": "Distribution and Knowledge Alignment-based Single-cell Multi-omics Cell Type Annotation",
+      "authors": [
+        "Sihan He",
+        "Yongqing Zhang",
+        "Zhengxiao Huang",
+        "Zixuan Wang",
+        "Yuhang Liu",
+        "Tianhao Li"
+      ],
+      "year": 2025,
+      "month": 6,
+      "day": 30,
+      "type": "conference-paper",
+      "venue": "2025 International Joint Conference on Neural Networks (IJCNN)",
+      "volume": null,
+      "issue": null,
+      "pages": "1-8",
+      "doi": "10.1109/ijcnn64981.2025.11227727",
+      "url": "https://doi.org/10.1109/ijcnn64981.2025.11227727",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 183827998,
+      "title": "An overview of computational methods in single-cell transcriptomic cell type annotation",
+      "authors": [
+        "Tianhao Li",
+        "Zixuan Wang",
+        "Yuhang Liu",
+        "Sihan He",
+        "Quan Zou",
+        "Yongqing Zhang"
+      ],
+      "year": 2025,
+      "month": 5,
+      "day": 1,
+      "type": "journal-article",
+      "venue": "Briefings in Bioinformatics",
+      "volume": "26",
+      "issue": "3",
+      "pages": null,
+      "doi": "10.1093/bib/bbaf207",
+      "url": "https://doi.org/10.1093/bib/bbaf207",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 175001256,
+      "title": "BCDB: A dual-branch network based on transformer for predicting transcription factor binding sites",
+      "authors": [
+        "Jia He",
+        "Yupeng Zhang",
+        "Yuhang Liu",
+        "Zhigan Zhou",
+        "Tianhao Li",
+        "Yongqing Zhang",
+        "Boqia Xie"
+      ],
+      "year": 2025,
+      "month": 2,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Methods",
+      "volume": "234",
+      "issue": null,
+      "pages": "141-151",
+      "doi": "10.1016/j.ymeth.2024.12.006",
+      "url": "https://doi.org/10.1016/j.ymeth.2024.12.006",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 176476767,
+      "title": "Cell-Specific Highly Correlated Network for Self-Supervised Distillation in Cell Type Annotation",
+      "authors": [
+        "Tianhao Li",
+        "Yugui Xu",
+        "Sihan He",
+        "Yuhang Liu",
+        "Zixuan Wang",
+        "Zhigan Zhou",
+        "Yongqing Zhang",
+        "Quan Zou"
+      ],
+      "year": 2024,
+      "month": 12,
+      "day": 3,
+      "type": "conference-paper",
+      "venue": "2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+      "volume": null,
+      "issue": null,
+      "pages": "988-993",
+      "doi": "10.1109/bibm62325.2024.10822095",
+      "url": "https://doi.org/10.1109/bibm62325.2024.10822095",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 175001061,
+      "title": "Assessing parameter efficient methods for pre-trained language model in annotating scRNA-seq data",
+      "authors": [
+        "Yucheng Xia",
+        "Yuhang Liu",
+        "Tianhao Li",
+        "Sihan He",
+        "Hong Chang",
+        "Yaqing Wang",
+        "Yongqing Zhang",
+        "Wenyi Ge"
+      ],
+      "year": 2024,
+      "month": 8,
+      "day": null,
+      "type": "journal-article",
+      "venue": "Methods",
+      "volume": "228",
+      "issue": null,
+      "pages": "12-21",
+      "doi": "10.1016/j.ymeth.2024.05.007",
+      "url": "https://doi.org/10.1016/j.ymeth.2024.05.007",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    },
+    {
+      "orcidPutCode": 175000569,
+      "title": "Exploring Parameter-Efficient Fine-Tuning of a Large-Scale Pre-Trained Model for scRNA-seq Cell Type Annotation",
+      "authors": [
+        "Yuhang Liu",
+        "Tianhao Li",
+        "Zixuan Wang",
+        "Guiquan Zhu",
+        "Yongqing Zhang",
+        "Quan Zou"
+      ],
+      "year": 2023,
+      "month": 12,
+      "day": 5,
+      "type": "conference-paper",
+      "venue": "2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+      "volume": null,
+      "issue": null,
+      "pages": "580-585",
+      "doi": "10.1109/bibm58861.2023.10385599",
+      "url": "https://doi.org/10.1109/bibm58861.2023.10385599",
+      "verified": {
+        "orcid": true,
+        "crossref": true,
+        "authorMatch": true
+      }
+    }
+  ]
+}
