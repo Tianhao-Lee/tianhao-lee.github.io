@@ -12,6 +12,7 @@ institution = "College of Computer Science, Sichuan University"
 avatar = "/avatar.webp"
 
 [social]
+email = "lth@stu.scu.edu.cn"
 location = "Chengdu, China"
 location_url = "https://www.openstreetmap.org/search?query=Sichuan%20University"
 location_details = [

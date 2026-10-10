@@ -57,12 +57,20 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-1">
-          <Profile
-            author={data.author}
-            social={data.social}
-            features={data.features}
-            researchInterests={data.researchInterests}
-          />
+          {/* On lg the profile is pinned out of flow, so the column reserves
+              no height and the row is sized by the content column alone. */}
+          <div className="lg:fixed lg:inset-x-0 lg:top-[5.5rem] lg:z-40 lg:pointer-events-none">
+            <div className="lg:mx-auto lg:max-w-6xl lg:px-8">
+              <div className="lg:w-[calc((100%-6rem)/3)] lg:max-h-[calc(100dvh-6.5rem)] lg:overflow-y-auto lg:pointer-events-auto">
+                <Profile
+                  author={data.author}
+                  social={data.social}
+                  features={data.features}
+                  researchInterests={data.researchInterests}
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="lg:col-span-2 space-y-8">

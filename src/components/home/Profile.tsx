@@ -109,7 +109,6 @@ export default function Profile({ author, social, features, researchInterests }:
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="sticky top-[5.5rem] max-h-[calc(100dvh-6.5rem)] overflow-y-auto"
         >
             {/* Profile Image */}
             <div className="w-64 aspect-[4/5] mx-auto mb-6 rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-700 shadow-sm">
