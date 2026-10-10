@@ -61,7 +61,12 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
               no height and the row is sized by the content column alone. */}
           <div className="lg:fixed lg:inset-x-0 lg:top-[5.5rem] lg:z-40 lg:pointer-events-none">
             <div className="lg:mx-auto lg:max-w-6xl lg:px-8">
-              <div className="lg:w-[calc((100%-6rem)/3)] lg:max-h-[calc(100dvh-6.5rem)] lg:overflow-y-auto lg:pointer-events-auto">
+              {/* Only clip/scroll when the sidebar genuinely cannot fit the
+                  viewport — an overflow container clips the email tooltip even
+                  when it never scrolls. The horizontal padding widens that clip
+                  boundary (offset by a negative margin so nothing moves), which
+                  leaves room for the tooltip to overhang the card. */}
+              <div className="lg:w-[calc((100%-6rem)/3+4rem)] lg:px-8 lg:-mx-8 lg:pointer-events-auto [@media(min-width:1024px)_and_(max-height:859px)]:max-h-[calc(100dvh-6.5rem)] [@media(min-width:1024px)_and_(max-height:859px)]:overflow-y-auto">
                 <Profile
                   author={data.author}
                   social={data.social}
