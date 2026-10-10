@@ -54,7 +54,7 @@ Guided students: **Sihan He** — M.Sc. in Computer Science, University of Elect
 - Outstanding Graduate of Sichuan Province, 2026
 - Outstanding Master's Thesis, Chengdu University of Information Technology, 2026
 - First-Class Master's Academic Scholarship, Chengdu University of Information Technology, 2023 and 2025
-- Second-Class Master's Academic Scholarship, Chengdu University of Information Technology, 2024
+- Third-Class Master's Academic Scholarship, Chengdu University of Information Technology, 2024
 - Third Prize, CUIT Graduate Academic Forum Oral Presentation, 2024
 - Outstanding Undergraduate Graduate, Class of 2023, Chengdu University of Information Technology, 2022
 - Merit Student, Chengdu University of Information Technology, 2022
