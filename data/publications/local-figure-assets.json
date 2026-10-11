@@ -14,8 +14,8 @@
       ],
       "output": "bcdb-figure1.webp",
       "width": 2000,
-      "height": 1782,
-      "bytes": 199638
+      "height": 1809,
+      "bytes": 203036
     },
     {
       "id": "distribution2025",
@@ -30,8 +30,8 @@
       ],
       "output": "alignment-figure2.webp",
       "width": 2000,
-      "height": 517,
-      "bytes": 87816
+      "height": 525,
+      "bytes": 90388
     },
     {
       "id": "leap",
@@ -45,9 +45,9 @@
         358
       ],
       "output": "leap-figure1.webp",
-      "width": 1932,
-      "height": 1215,
-      "bytes": 179140
+      "width": 2000,
+      "height": 1280,
+      "bytes": 189324
     },
     {
       "id": "sctchcn",
@@ -62,8 +62,8 @@
       ],
       "output": "sctchcn-figure1.webp",
       "width": 2000,
-      "height": 1203,
-      "bytes": 255714
+      "height": 1230,
+      "bytes": 264888
     },
     {
       "id": "longtail",
@@ -77,9 +77,9 @@
         207
       ],
       "output": "longtail-figure2.webp",
-      "width": 1750,
-      "height": 660,
-      "bytes": 95852
+      "width": 2000,
+      "height": 769,
+      "bytes": 114944
     },
     {
       "id": "sad",
@@ -94,8 +94,8 @@
       ],
       "output": "sad-figure2.webp",
       "width": 2000,
-      "height": 1134,
-      "bytes": 190220
+      "height": 1152,
+      "bytes": 192384
     },
     {
       "id": "peft2023",
@@ -109,9 +109,9 @@
         384
       ],
       "output": "peft2023-figure1.webp",
-      "width": 1144,
-      "height": 1244,
-      "bytes": 104196
+      "width": 2000,
+      "height": 2364,
+      "bytes": 204852
     },
     {
       "id": "peft2024",
@@ -126,8 +126,8 @@
       ],
       "output": "peft2024-figure1.webp",
       "width": 2000,
-      "height": 1308,
-      "bytes": 174582
+      "height": 1328,
+      "bytes": 181938
     },
     {
       "id": "scmoanno",
@@ -141,9 +141,9 @@
         357
       ],
       "output": "scmoanno-figure2.webp",
-      "width": 1950,
-      "height": 1296,
-      "bytes": 151626
+      "width": 2000,
+      "height": 1352,
+      "bytes": 157996
     },
     {
       "id": "scdpr",
@@ -158,8 +158,8 @@
       ],
       "output": "scdpr-figure1.webp",
       "width": 2000,
-      "height": 1941,
-      "bytes": 229676
+      "height": 1973,
+      "bytes": 233378
     },
     {
       "id": "scbrf",
@@ -174,8 +174,8 @@
       ],
       "output": "scbrf-figure2.webp",
       "width": 2000,
-      "height": 1503,
-      "bytes": 240754
+      "height": 1527,
+      "bytes": 251486
     },
     {
       "id": "clsfdti",
@@ -189,9 +189,9 @@
         693
       ],
       "output": "clsfdti-figure2.webp",
-      "width": 1534,
-      "height": 905,
-      "bytes": 72982
+      "width": 2000,
+      "height": 1206,
+      "bytes": 102228
     },
     {
       "id": "review",

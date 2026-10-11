@@ -18,8 +18,8 @@
       "abstract": "Accurate identification of cell types is a pivotal and intricate task in scRNA-seq data analysis. Recently, significant strides have been made in cell type annotation of scRNA-seq data using pre-trained language models (PLMs). This method has surmounted the constraints of conventional approaches regarding precision, robustness, and generalization. However, the fine-tuning process of large-scale pre-trained models incurs substantial computational expenses. To tackle this issue, a promising avenue of research has emerged, proposing parameter-efficient fine-tuning techniques for PLMs. These techniques concentrate on fine-tuning only a small portion of the model parameters while attaining comparable performance. In this study, we extensively research parameter-efficient fine-tuning methods for scRNA-seq cell type annotation, employing scBERT as the backbone. We scrutinize the performance and compatibility of various parameter-efficient fine-tuning methodologies across multiple datasets. Through comprehensive analysis, we demonstrate the remarkable performance of parameter-efficient fine-tuning methods in cell type annotation.",
       "figure": {
         "src": "/papers/local-figures/peft2023-figure1.webp",
-        "width": 1144,
-        "height": 1244,
+        "width": 2000,
+        "height": 2364,
         "alt": "Workflow of parameter-efficient fine-tuning for scRNA-seq annotation",
         "caption": "Figure 1. Workflow of large-model pre-training and parameter-efficient fine-tuning.",
         "credit": "Liu et al., BIBM 2023, Figure 1",
@@ -60,7 +60,7 @@
       "figure": {
         "src": "/papers/local-figures/peft2024-figure1.webp",
         "width": 2000,
-        "height": 1308,
+        "height": 1328,
         "alt": "Overview of the PEFT evaluation workflow for scRNA-seq annotation",
         "caption": "Figure 1. Overview of the PEFT evaluation workflow.",
         "credit": "Xia et al., Methods 2024, Figure 1",
@@ -101,7 +101,7 @@
       "figure": {
         "src": "/papers/local-figures/sctchcn-figure1.webp",
         "width": 2000,
-        "height": 1203,
+        "height": 1230,
         "alt": "Overview of the scTCHCN self-supervised distillation framework",
         "caption": "Figure 1. Overview of the scTCHCN framework.",
         "credit": "Li et al., BIBM 2024, Figure 1",
@@ -142,7 +142,7 @@
       "figure": {
         "src": "/papers/local-figures/bcdb-figure1.webp",
         "width": 2000,
-        "height": 1782,
+        "height": 1809,
         "alt": "Overall architecture of the BCDB transcription factor binding site model",
         "caption": "Figure 1. The overall framework of BCDB.",
         "credit": "He et al., Methods 2025, Figure 1",
@@ -221,7 +221,7 @@
       "figure": {
         "src": "/papers/local-figures/alignment-figure2.webp",
         "width": 2000,
-        "height": 517,
+        "height": 525,
         "alt": "Transformer-based multi-omics alignment and distillation architecture",
         "caption": "Figure 2. Transformer architecture for aligning scRNA-seq and scATAC-seq data.",
         "credit": "He et al., IJCNN 2025, Figure 2",
@@ -261,8 +261,8 @@
       "abstract": "Cell type annotation is paramount for subsequent biomedical research. Supervised deep learning has advanced annotation, but efficient use of single-cell multi-omics data and generalization to rare cell types remain challenging. scMoAnno uses pre-trained cross-attention networks for mutual learning and fusion of genetic and epigenetic distributions. Predictions on scRNA-seq and scATAC-seq data demonstrate improved rare-cell recognition through pre-trained feature fusion. Experiments on four benchmark datasets show that scMoAnno surpasses nine state-of-the-art baseline models in overall performance.",
       "figure": {
         "src": "/papers/local-figures/scmoanno-figure2.webp",
-        "width": 1950,
-        "height": 1296,
+        "width": 2000,
+        "height": 1352,
         "alt": "Workflow of the scMoAnno multi-omics cell type annotation model",
         "caption": "Figure 2. Workflow diagram of the scMoAnno model.",
         "credit": "Zhang et al., Applied Soft Computing 2025, Figure 2",
@@ -301,8 +301,8 @@
       "abstract": "Identifying drug-target interactions is essential in drug discovery and repositioning. However, the scarcity of three-dimensional structural data has forced most methods to use low-dimensional data, constraining performance. CLSF-DTI incorporates structural and functional information through contrastive learning during feature extraction. Experiments on five benchmark datasets demonstrate the best overall performance among five state-of-the-art baselines, and ablation studies support improved prediction and generalization. The model also identified ligands for PKA-Cα in drug screening.",
       "figure": {
         "src": "/papers/local-figures/clsfdti-figure2.webp",
-        "width": 1534,
-        "height": 905,
+        "width": 2000,
+        "height": 1206,
         "alt": "Architecture of the CLSF-DTI drug-target interaction model",
         "caption": "Figure 2. Overview of the CLSF-DTI model architecture.",
         "credit": "Zhang et al., BMC Bioinformatics 2026, Figure 2",
@@ -339,8 +339,8 @@
       "abstract": "Enhancer activity is central to gene expression regulation, but the relationship between DNA sequence and activity remains difficult to model. LEAP is an interpretable Performer-based framework that directly captures long-scale enhancer information from DNA sequences. It integrates gene information within a 1001 bp range and evaluates multiple sequence scales. Experiments report the highest PCC and lowest MSE among compared methods, with mean values of 0.794 and 0.406 across all datasets, respectively. Contribution-score visualization highlights heterogeneous motif importance.",
       "figure": {
         "src": "/papers/local-figures/leap-figure1.webp",
-        "width": 1932,
-        "height": 1215,
+        "width": 2000,
+        "height": 1280,
         "alt": "Overview of the LEAP enhancer activity prediction framework",
         "caption": "Figure 1. Overview of the LEAP framework.",
         "credit": "He et al., Computational Biology and Chemistry 2026, Figure 1",
@@ -380,8 +380,8 @@
       "abstract": "Single-cell annotation, which identifies specific cell types in biological tissues, is a cornerstone of targeted therapy in precision medicine. However, the lack of incremental annotation capabilities in existing methods limits their adaptability to dynamic immune environment changes and broader applications. Additionally, the high-dimensional sparsity and long-tail distribution of single-cell data hinder practical long-tail incremental annotation. This paper introduces a single-cell incremental annotation framework that combines a distribution-aware diffusion model with an expression-aware knowledge distillation architecture. The distribution-aware module retrospects and replays historical data distributions, enabling precise generation of previously annotated cell types and mitigating catastrophic forgetting. The expression-aware module aligns gene representations through a multi-perspective attention mechanism, enhancing sensitivity to novel cell types while retaining knowledge of dominant categories. A fuzzy incremental guidance mechanism with uncertainty constraints further reduces the adverse effects of long-tail distributions. Experimental results demonstrate significant improvements in multi-session incremental annotation accuracy.",
       "figure": {
         "src": "/papers/local-figures/longtail-figure2.webp",
-        "width": 1750,
-        "height": 660,
+        "width": 2000,
+        "height": 769,
         "alt": "Workflow of long-tailed class-incremental single-cell annotation",
         "caption": "Figure 2. Workflow of single-cell class-incremental annotation.",
         "credit": "Li et al., Applied Soft Computing 2026, Figure 2",
@@ -421,7 +421,7 @@
       "figure": {
         "src": "/papers/local-figures/sad-figure2.webp",
         "width": 2000,
-        "height": 1134,
+        "height": 1152,
         "alt": "Gene completion workflow of the SAD diffusion model",
         "caption": "Figure 2. Gene completion workflow of the SAD framework.",
         "credit": "Li et al., IEEE TCBB 2026, Figure 2",
@@ -462,7 +462,7 @@
       "figure": {
         "src": "/papers/local-figures/scdpr-figure1.webp",
         "width": 2000,
-        "height": 1941,
+        "height": 1973,
         "alt": "Overview of the scDPR drug perturbation response framework",
         "caption": "Figure 1. Overview of the scDPR framework.",
         "credit": "Zhang et al., Neural Networks 2026, Figure 1",
@@ -503,7 +503,7 @@
       "figure": {
         "src": "/papers/local-figures/comet-figure1.webp",
         "width": 2000,
-        "height": 774,
+        "height": 786,
         "alt": "Overview of the COMET few-shot single-cell annotation framework",
         "caption": "Figure 1. Overview of the COMET framework.",
         "credit": "Li et al., IJCNN 2026, Figure 1",
@@ -543,7 +543,7 @@
       "figure": {
         "src": "/papers/local-figures/scbrf-figure2.webp",
         "width": 2000,
-        "height": 1503,
+        "height": 1527,
         "alt": "Architecture of the scBRF bidirectional retrieval framework",
         "caption": "Figure 2. Schematic diagram of the scBRF framework.",
         "credit": "Zhang et al., Neurocomputing 2027, Figure 2",

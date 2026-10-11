@@ -9,6 +9,7 @@ const PDF_DIR = process.env.PDF_DIR || path.resolve(ROOT, "..", "temple_paper");
 const OUT_DIR = path.join(ROOT, "public", "papers", "local-figures");
 const REPORT = path.join(ROOT, "data", "publications", "figure-extraction.json");
 const DPI = 300;
+const MAX_DPI = 600;
 const MAX_WIDTH = 2000;
 const CLUSTER_GAP = 30;
 
@@ -121,10 +122,13 @@ function figureBounds(page, figureNumber) {
   });
 
   const merged = union([artworkBounds, ...insideLabels]);
+  // Labels may widen the crop vertically, but never horizontally: on a
+  // two-column page the body text can start within a point of the figure
+  // border, so any horizontal slack drags the neighbouring column in.
   return rect(
-    Math.max(pageRect.x0, merged.x0 - 4),
+    Math.max(pageRect.x0, artworkBounds.x0),
     Math.max(pageRect.y0, merged.y0),
-    Math.min(pageRect.x1, merged.x1 + 4),
+    Math.min(pageRect.x1, artworkBounds.x1),
     Math.min(pageRect.y1, caption.y0 - 3, merged.y1 + 4),
   );
 }
@@ -132,13 +136,17 @@ function figureBounds(page, figureNumber) {
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.mkdirSync(path.dirname(REPORT), { recursive: true });
-  const scale = DPI / 72;
   const records = [];
 
   for (const [id, filename, pageNumber, figureNumber, outputName] of PAPERS) {
     const doc = mupdf.Document.openDocument(fs.readFileSync(path.join(PDF_DIR, filename)), "application/pdf");
     const page = doc.loadPage(pageNumber - 1);
     const bounds = figureBounds(page, figureNumber);
+
+    // Render at whatever scale fills MAX_WIDTH, so narrow figures are not
+    // stuck at a lower pixel count than wide ones.
+    const needed = MAX_WIDTH / (bounds.x1 - bounds.x0);
+    const scale = Math.min(Math.max(needed, DPI / 72), MAX_DPI / 72);
 
     const pixmap = page.toPixmap(mupdf.Matrix.scale(scale, scale), mupdf.ColorSpace.DeviceRGB, false, true);
     const left = Math.max(0, Math.round(bounds.x0 * scale));

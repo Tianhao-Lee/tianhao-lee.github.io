@@ -7,15 +7,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        34.83,
+        38.83,
         50.835,
-        560.51,
+        556.51,
         518.995
       ],
       "output": "bcdb-figure1.webp",
       "width": 2000,
-      "height": 1782,
-      "bytes": 199638
+      "height": 1809,
+      "bytes": 203036
     },
     {
       "id": "distribution2025",
@@ -23,15 +23,15 @@
       "page": 3,
       "figure": 2,
       "pdfBounds": [
-        43.057,
+        47.057,
         49.053,
-        567.951,
+        563.951,
         184.553
       ],
       "output": "alignment-figure2.webp",
       "width": 2000,
-      "height": 517,
-      "bytes": 87816
+      "height": 525,
+      "bytes": 90388
     },
     {
       "id": "leap",
@@ -39,15 +39,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        65.784,
+        69.784,
         66.369,
-        529.544,
+        525.544,
         358
       ],
       "output": "leap-figure1.webp",
-      "width": 1932,
-      "height": 1215,
-      "bytes": 179140
+      "width": 2000,
+      "height": 1280,
+      "bytes": 189324
     },
     {
       "id": "sctchcn",
@@ -55,15 +55,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        37.34,
+        44.791,
         43.719,
-        573.237,
+        568.754,
         366
       ],
       "output": "sctchcn-figure1.webp",
       "width": 2000,
-      "height": 1203,
-      "bytes": 255714
+      "height": 1230,
+      "bytes": 264888
     },
     {
       "id": "longtail",
@@ -71,15 +71,15 @@
       "page": 3,
       "figure": 2,
       "pdfBounds": [
-        85.95,
+        89.95,
         48.671,
-        505.947,
+        501.947,
         207
       ],
       "output": "longtail-figure2.webp",
-      "width": 1750,
-      "height": 660,
-      "bytes": 95852
+      "width": 2000,
+      "height": 769,
+      "bytes": 114944
     },
     {
       "id": "sad",
@@ -87,15 +87,15 @@
       "page": 3,
       "figure": 2,
       "pdfBounds": [
-        49.163,
+        53.163,
         66.036,
-        549.163,
+        545.163,
         349.516
       ],
       "output": "sad-figure2.webp",
       "width": 2000,
-      "height": 1134,
-      "bytes": 190220
+      "height": 1152,
+      "bytes": 192384
     },
     {
       "id": "peft2023",
@@ -103,15 +103,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        38.293,
+        47.902,
         85.418,
-        312.741,
+        300.529,
         384
       ],
       "output": "peft2023-figure1.webp",
-      "width": 1144,
-      "height": 1244,
-      "bytes": 104196
+      "width": 2000,
+      "height": 2364,
+      "bytes": 204852
     },
     {
       "id": "peft2024",
@@ -119,15 +119,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        34.902,
+        38.902,
         50.785,
-        560.58,
+        556.58,
         394.384
       ],
       "output": "peft2024-figure1.webp",
       "width": 2000,
-      "height": 1308,
-      "bytes": 174582
+      "height": 1328,
+      "bytes": 181938
     },
     {
       "id": "scmoanno",
@@ -135,15 +135,15 @@
       "page": 4,
       "figure": 2,
       "pdfBounds": [
-        65.241,
+        69.241,
         45.914,
-        533.309,
+        529.309,
         357
       ],
       "output": "scmoanno-figure2.webp",
-      "width": 1950,
-      "height": 1296,
-      "bytes": 151626
+      "width": 2000,
+      "height": 1352,
+      "bytes": 157996
     },
     {
       "id": "scdpr",
@@ -151,15 +151,15 @@
       "page": 4,
       "figure": 1,
       "pdfBounds": [
-        50.67,
+        54.67,
         51.063,
-        541.967,
+        537.967,
         528
       ],
       "output": "scdpr-figure1.webp",
       "width": 2000,
-      "height": 1941,
-      "bytes": 229676
+      "height": 1973,
+      "bytes": 233378
     },
     {
       "id": "scbrf",
@@ -167,15 +167,15 @@
       "page": 5,
       "figure": 2,
       "pdfBounds": [
-        52.059,
+        56.059,
         52.323,
-        553.272,
+        549.272,
         429
       ],
       "output": "scbrf-figure2.webp",
       "width": 2000,
-      "height": 1503,
-      "bytes": 240754
+      "height": 1527,
+      "bytes": 251486
     },
     {
       "id": "clsfdti",
@@ -183,15 +183,15 @@
       "page": 4,
       "figure": 2,
       "pdfBounds": [
-        113.567,
+        117.567,
         475.764,
-        481.706,
+        477.706,
         693
       ],
       "output": "clsfdti-figure2.webp",
-      "width": 1534,
-      "height": 905,
-      "bytes": 72982
+      "width": 2000,
+      "height": 1206,
+      "bytes": 102228
     },
     {
       "id": "comet",
@@ -199,15 +199,15 @@
       "page": 3,
       "figure": 1,
       "pdfBounds": [
-        34.07,
+        38.07,
         54.266,
-        573.515,
+        569.515,
         263
       ],
       "output": "comet-figure1.webp",
       "width": 2000,
-      "height": 774,
-      "bytes": 157794
+      "height": 786,
+      "bytes": 160722
     }
   ]
 }
