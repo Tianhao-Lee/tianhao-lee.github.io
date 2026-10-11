@@ -2,118 +2,101 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
+import { ArrowUpRight } from 'lucide-react';
+import Markdown from '@/components/ui/Markdown';
 import { CardPageConfig } from '@/types/page';
 
-const markdownComponents = {
-    h3: ({ children }: React.ComponentProps<'h3'>) => <h3 className="text-sm font-semibold text-primary mt-5 mb-2 first:mt-0">{children}</h3>,
-    h4: ({ children }: React.ComponentProps<'h4'>) => <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-5 mb-2 first:mt-0">{children}</h4>,
-    p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
-    ul: ({ children }: React.ComponentProps<'ul'>) => <ul className="list-disc list-outside mb-3 space-y-1 pl-5">{children}</ul>,
-    ol: ({ children }: React.ComponentProps<'ol'>) => <ol className="list-decimal list-outside mb-3 space-y-1 pl-5">{children}</ol>,
-    li: ({ children }: React.ComponentProps<'li'>) => <li className="mb-1">{children}</li>,
-    a: ({ ...props }) => (
-        <a
-            {...props}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
-        />
-    ),
-    blockquote: ({ children }: React.ComponentProps<'blockquote'>) => (
-        <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">
-            {children}
-        </blockquote>
-    ),
-    strong: ({ children }: React.ComponentProps<'strong'>) => <strong className="font-semibold text-primary">{children}</strong>,
-    em: ({ children }: React.ComponentProps<'em'>) => <em className="italic">{children}</em>,
-    code: ({ children }: React.ComponentProps<'code'>) => (
-        <code className="px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-[0.95em]">{children}</code>
-    ),
-};
+const ease = [0.32, 0.72, 0, 1] as const;
 
-export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
+/**
+ * One full-bleed panel per card, alternating between the two surface tones —
+ * the same rhythm Apple uses for its feature sections.
+ */
+export default function CardPage({ config }: { config: CardPageConfig }) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.55, ease }}
         >
-            <div className={embedded ? "mb-4" : "mb-8"}>
-                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+            <header className="mx-auto mb-16 max-w-3xl text-center">
+                <h1 className="hero-title text-primary">{config.title}</h1>
                 {config.description && (
-                    <div className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl leading-relaxed`}>
-                        <ReactMarkdown components={markdownComponents}>
-                            {config.description}
-                        </ReactMarkdown>
-                    </div>
+                    <p className="lede mx-auto mt-6 max-w-2xl text-neutral-500">{config.description}</p>
                 )}
-            </div>
+            </header>
 
-            <div className={`grid ${embedded ? "gap-4" : "gap-6"}`}>
+            <div className="mx-auto max-w-6xl space-y-8">
                 {config.items.map((item, index) => (
-                    <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 0.1 * index }}
-                        className={`bg-white dark:bg-neutral-900 ${embedded ? "p-4" : "p-6"} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01]`}
+                    <motion.article
+                        key={`${item.title}-${index}`}
+                        initial={{ opacity: 0, y: 28 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-60px' }}
+                        transition={{ duration: 0.55, ease }}
+                        className={`overflow-hidden rounded-[32px] p-7 sm:p-10 lg:p-14 ${
+                            index % 2 === 0
+                                ? 'bg-surface ring-1 ring-hairline'
+                                : 'bg-surface-sunken'
+                        }`}
                     >
-                        <div className={`flex flex-col sm:flex-row ${embedded ? "gap-4" : "gap-6"}`}>
+                        <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-10">
                             {item.image && (
                                 <Image
                                     src={item.image}
                                     alt={item.title}
                                     width={480}
                                     height={672}
-                                    className={`w-36 h-auto rounded-lg border border-neutral-200 dark:border-neutral-700 object-cover shrink-0 self-start mx-auto sm:mx-0 ${embedded ? "sm:w-24" : ""}`}
+                                    className="mx-auto h-auto w-40 shrink-0 rounded-3xl object-cover ring-1 ring-hairline sm:mx-0 sm:w-48"
                                 />
                             )}
-                            <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap justify-between items-start gap-x-3 gap-y-2 mb-2">
-                            <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary`}>{item.title}</h3>
-                            <div className="flex items-center gap-2 shrink-0">
-                                {item.link && (
-                                    <a
-                                        href={item.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1 px-3 py-1 rounded-md text-xs font-medium bg-accent text-white hover:bg-accent-dark transition-colors"
-                                    >
-                                        {item.linkLabel || 'Visit'}
-                                        <ExternalLink className="w-3 h-3" />
-                                    </a>
+
+                            <div className="min-w-0 flex-1">
+                                <h2 className="section-title text-primary">{item.title}</h2>
+                                {item.subtitle && (
+                                    <p className="mt-3 text-[17px] font-medium text-accent">{item.subtitle}</p>
                                 )}
-                                {item.date && (
-                                    <span className="text-sm text-neutral-500 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">
-                                        {item.date}
-                                    </span>
-                                )}
+
+                                <div className="mt-6 flex flex-wrap items-center gap-2.5">
+                                    {item.link && (
+                                        <a
+                                            href={item.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-[13px] font-semibold text-white transition-opacity hover:opacity-85"
+                                        >
+                                            {item.linkLabel || 'Visit'}
+                                            <ArrowUpRight className="h-3.5 w-3.5" />
+                                        </a>
+                                    )}
+                                    {item.date && (
+                                        <span className="rounded-full bg-fill px-4 py-2 text-[13px] font-medium text-neutral-500">
+                                            {item.date}
+                                        </span>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                        {item.subtitle && (
-                            <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>{item.subtitle}</p>
-                        )}
+
                         {item.content && (
-                            <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
-                                <ReactMarkdown components={markdownComponents}>
-                                    {item.content}
-                                </ReactMarkdown>
+                            <div className="mt-10 max-w-4xl">
+                                <Markdown content={item.content} variant="card" />
                             </div>
                         )}
-                        {item.tags && (
-                            <div className="flex flex-wrap gap-2 mt-4">
-                                {item.tags.map(tag => (
-                                    <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
+
+                        {item.tags && item.tags.length > 0 && (
+                            <div className="mt-8 flex flex-wrap gap-2">
+                                {item.tags.map((tag) => (
+                                    <span
+                                        key={tag}
+                                        className="rounded-full border border-hairline px-3 py-1.5 text-[12px] font-medium text-neutral-500 dark:text-neutral-400"
+                                    >
                                         {tag}
                                     </span>
                                 ))}
                             </div>
                         )}
-                            </div>
-                        </div>
-                    </motion.div>
+                    </motion.article>
                 ))}
             </div>
         </motion.div>

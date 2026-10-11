@@ -20,18 +20,21 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
     new Date().toLocaleDateString(locale || 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
-    <footer className="border-t border-neutral-200/50 bg-neutral-50/50 dark:bg-neutral-900/50 dark:border-neutral-700/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="text-xs text-neutral-500">
-            {messages.footer.lastUpdated}: {resolvedLastUpdated}
-          </p>
-          <p className="text-xs text-neutral-500">
-            <a href="https://github.com/Tianhao-Lee" target="_blank" rel="noopener noreferrer">
-              © {new Date().getFullYear()} Tianhao Li
-            </a>
-          </p>
-        </div>
+    <footer className="mt-24 border-t border-hairline">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-5 py-8 text-xs text-neutral-500 sm:flex-row sm:px-8">
+        <p>
+          {messages.footer.lastUpdated}: {resolvedLastUpdated}
+        </p>
+        <p>
+          <a
+            href="https://github.com/Tianhao-Lee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-accent"
+          >
+            © {new Date().getFullYear()} Tianhao Li
+          </a>
+        </p>
       </div>
     </footer>
   );

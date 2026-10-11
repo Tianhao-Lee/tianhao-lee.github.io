@@ -1,56 +1,31 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import ReactMarkdown from 'react-markdown';
+import Markdown from '@/components/ui/Markdown';
 import { useMessages } from '@/lib/i18n/useMessages';
 
 interface AboutProps {
-    content: string;
-    title?: string;
+  content: string;
+  title?: string;
 }
 
-export default function About({ content, title }: AboutProps) {
-    const messages = useMessages();
-    const resolvedTitle = title || messages.home.about;
+const ease = [0.32, 0.72, 0, 1] as const;
 
-    return (
-        <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-        >
-            <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
-                <ReactMarkdown
-                    components={{
-                        h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
-                        h3: ({ children }) => <h3 className="text-xl font-semibold text-primary mt-6 mb-3">{children}</h3>,
-                        h4: ({ children }) => <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mt-6 mb-2 first:mt-0">{children}</h4>,
-                        p: ({ children }) => <p className="mb-4 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="list-disc list-outside mb-4 space-y-1 pl-5">{children}</ul>,
-                        ol: ({ children }) => <ol className="list-decimal list-outside mb-4 space-y-1 pl-5">{children}</ol>,
-                        li: ({ children }) => <li className="mb-1">{children}</li>,
-                        a: ({ ...props }) => (
-                            <a
-                                {...props}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
-                            />
-                        ),
-                        blockquote: ({ children }) => (
-                            <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">
-                                {children}
-                            </blockquote>
-                        ),
-                        strong: ({ children }) => <strong className="font-semibold text-primary">{children}</strong>,
-                        em: ({ children }) => <em className="italic text-neutral-600 dark:text-neutral-500">{children}</em>,
-                    }}
-                >
-                    {content}
-                </ReactMarkdown>
-            </div>
-        </motion.section>
-    );
+export default function About({ content, title }: AboutProps) {
+  const messages = useMessages();
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease }}
+      className="text-center"
+    >
+      <h2 className="section-title mx-auto max-w-3xl text-primary">{title || messages.home.about}</h2>
+      <div className="mt-10 text-left">
+        <Markdown content={content} />
+      </div>
+    </motion.section>
+  );
 }

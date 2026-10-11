@@ -22,6 +22,7 @@ export interface LocaleMessages {
     send: string;
     sendEmail: string;
     researchInterests: string;
+    copied: string;
     like: string;
     liked: string;
     thanks: string;
@@ -41,6 +42,9 @@ export interface LocaleMessages {
     abstract: string;
     bibtex: string;
     code: string;
+    reset: string;
+    allYears: string;
+    allTypes: string;
     authorRoles: {
       first: string;
       coFirst: string;
@@ -67,6 +71,7 @@ export interface LocaleMessages {
     metadataBasis: string;
     metadataOnlyTitle: string;
     metadataOnlyBody: string;
+    citations: string;
     enlargeFigure: string;
     closeFigure: string;
     figurePreview: string;
@@ -104,6 +109,7 @@ const en: LocaleMessages = {
     send: 'Send',
     sendEmail: 'Send Email',
     researchInterests: 'Research Interests',
+    copied: 'Copied',
     like: 'Like',
     liked: 'Liked',
     thanks: 'Thanks!',
@@ -123,6 +129,9 @@ const en: LocaleMessages = {
     abstract: 'Abstract',
     bibtex: 'BibTeX',
     code: 'Code',
+    reset: 'Reset',
+    allYears: 'All years',
+    allTypes: 'All types',
     authorRoles: {
       first: 'First author',
       coFirst: 'Co-first author',
@@ -149,6 +158,7 @@ const en: LocaleMessages = {
     metadataBasis: 'Verified bibliographic metadata only.',
     metadataOnlyTitle: 'Metadata-only record',
     metadataOnlyBody: 'A reliable abstract or full text was not available for editorial review. This page therefore limits itself to validated bibliographic metadata and the publisher record.',
+    citations: 'citations',
     enlargeFigure: 'Enlarge figure',
     closeFigure: 'Close figure',
     figurePreview: 'Figure preview',
@@ -186,6 +196,7 @@ const zh: LocaleMessages = {
     send: '发送',
     sendEmail: '发送邮件',
     researchInterests: '研究兴趣',
+    copied: '已复制',
     like: '点赞',
     liked: '已点赞',
     thanks: '感谢支持！',
@@ -205,6 +216,9 @@ const zh: LocaleMessages = {
     abstract: '摘要',
     bibtex: 'BibTeX',
     code: '代码',
+    reset: '清除筛选',
+    allYears: '全部年份',
+    allTypes: '全部类型',
     authorRoles: {
       first: '第一作者',
       coFirst: '共同一作',
@@ -231,6 +245,7 @@ const zh: LocaleMessages = {
     metadataBasis: '仅包含已核验的文献元数据。',
     metadataOnlyTitle: '仅元数据记录',
     metadataOnlyBody: '目前没有可用于编辑核对的可靠摘要或全文，因此本页仅展示已核验的文献元数据和出版商记录。',
+    citations: '次引用',
     enlargeFigure: '放大图片',
     closeFigure: '关闭图片',
     figurePreview: '图片预览',

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { LanguageIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { cn } from '@/lib/utils';
 import { useLocaleStore } from '@/lib/stores/localeStore';
@@ -11,94 +11,121 @@ interface LanguageToggleProps {
   i18n: I18nRuntimeConfig;
 }
 
+/**
+ * Segmented control for the common two-locale case, dropdown beyond that —
+ * both patterns straight out of iOS.
+ */
 export default function LanguageToggle({ i18n }: LanguageToggleProps) {
   const { locale, setLocale } = useLocaleStore();
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => setMounted(true), []);
+
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (!isOpen) return;
+    const close = (e: KeyboardEvent) => e.key === 'Escape' && setIsOpen(false);
+    window.addEventListener('keydown', close);
+    return () => window.removeEventListener('keydown', close);
+  }, [isOpen]);
 
   if (!i18n.enabled || !i18n.switcher || i18n.locales.length <= 1) {
     return null;
   }
 
   if (!mounted) {
+    return <div className="h-8 w-24 rounded-full bg-fill" />;
+  }
+
+  const currentLocale = i18n.locales.includes(locale) ? locale : i18n.defaultLocale;
+  const labelOf = (code: string) => i18n.labels[code] || code.toUpperCase();
+
+  if (i18n.locales.length <= 3) {
     return (
-      <div className="flex items-center justify-center w-14 h-10 rounded-lg border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
-        <div className="w-6 h-4 rounded bg-neutral-300 animate-pulse" />
+      <div className="flex items-center gap-1 rounded-full bg-fill p-0.5" role="group">
+        {i18n.locales.map((code) => {
+          const active = code === currentLocale;
+          return (
+            <button
+              key={code}
+              type="button"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={() => setLocale(code)}
+              aria-pressed={active}
+              className={cn(
+                'relative rounded-full px-3 py-1 text-xs font-medium transition-colors duration-200',
+                active ? 'text-primary' : 'text-neutral-500 hover:text-primary dark:text-neutral-400',
+              )}
+            >
+              {active && (
+                <motion.span
+                  layoutId="locale-pill"
+                  transition={{ type: 'spring', stiffness: 420, damping: 32 }}
+                  className="absolute inset-0 rounded-full bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
+                />
+              )}
+              <span className="relative">{labelOf(code)}</span>
+            </button>
+          );
+        })}
       </div>
     );
   }
 
-  const currentLocale = i18n.locales.includes(locale) ? locale : i18n.defaultLocale;
-  const currentLabel = i18n.labels[currentLocale] || currentLocale;
-
   return (
     <div className="relative">
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
+      <button
         type="button"
         onMouseDown={(e) => e.preventDefault()}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((v) => !v)}
+        title={labelOf(currentLocale)}
         className={cn(
-          'flex items-center justify-center gap-1 px-2 h-10 rounded-lg',
-          'border border-neutral-200 bg-background hover:bg-neutral-50',
-          'dark:border-[rgba(148,163,184,0.24)] dark:bg-neutral-800 dark:hover:bg-neutral-700',
-          'transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50',
-          'text-neutral-600 hover:text-primary dark:text-neutral-400 dark:hover:text-white'
+          'flex h-8 items-center gap-1.5 rounded-full px-3 text-xs font-medium',
+          'text-neutral-600 transition-colors hover:bg-fill hover:text-primary dark:text-neutral-400',
+          'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40',
         )}
-        title={currentLabel}
       >
         <LanguageIcon className="h-4 w-4" />
-        <span className="text-xs font-medium">{currentLabel}</span>
-        <ChevronDownIcon className="h-3.5 w-3.5" />
-      </motion.button>
+        {labelOf(currentLocale)}
+        <ChevronDownIcon className="h-3 w-3" />
+      </button>
 
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: -10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.95, y: -10 }}
-          className={cn(
-            'absolute right-0 mt-2 w-36 rounded-lg shadow-lg border',
-            'bg-background border-neutral-200 dark:border-[rgba(148,163,184,0.24)]',
-            'dark:bg-neutral-800 z-50'
-          )}
-        >
-          <div className="py-1">
-            {i18n.locales.map((localeOption) => (
-              <button
-                key={localeOption}
-                onClick={() => {
-                  setLocale(localeOption);
-                  setIsOpen(false);
-                }}
-                className={cn(
-                  'flex items-center justify-between w-full px-3 py-2 text-sm',
-                  'hover:bg-neutral-50 dark:hover:bg-neutral-700',
-                  'transition-colors duration-200',
-                  currentLocale === localeOption
-                    ? 'text-accent bg-accent/10'
-                    : 'text-neutral-700 dark:text-neutral-300'
-                )}
-              >
-                <span>{i18n.labels[localeOption] || localeOption}</span>
-                <span className="text-xs opacity-70">{localeOption.toUpperCase()}</span>
-              </button>
-            ))}
-          </div>
-        </motion.div>
-      )}
-
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+            <motion.div
+              initial={{ opacity: 0, y: -6, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -6, scale: 0.96 }}
+              transition={{ duration: 0.16, ease: [0.32, 0.72, 0, 1] }}
+              className="glass absolute right-0 z-50 mt-2 w-40 origin-top-right overflow-hidden rounded-2xl p-1"
+            >
+              {i18n.locales.map((code) => {
+                const active = code === currentLocale;
+                return (
+                  <button
+                    key={code}
+                    onClick={() => {
+                      setLocale(code);
+                      setIsOpen(false);
+                    }}
+                    className={cn(
+                      'flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors',
+                      active
+                        ? 'bg-accent-soft font-medium text-accent'
+                        : 'text-neutral-700 hover:bg-fill dark:text-neutral-600',
+                    )}
+                  >
+                    {labelOf(code)}
+                    <span className="text-xs opacity-60">{code.toUpperCase()}</span>
+                  </button>
+                );
+              })}
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -26,21 +26,25 @@ export default function DynamicPageClient({ dataByLocale, defaultLocale }: Dynam
   const fallback = dataByLocale[defaultLocale] || Object.values(dataByLocale)[0];
   const pageData = dataByLocale[locale] || fallback;
 
-  if (!pageData) {
-    return null;
-  }
+  if (!pageData) return null;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {pageData.type === 'publication' && (
-        <PublicationsList config={pageData.config} publications={pageData.publications} />
-      )}
-      {pageData.type === 'text' && (
-        <TextPage config={pageData.config} content={pageData.content} />
-      )}
-      {pageData.type === 'card' && (
-        <CardPage config={pageData.config} />
-      )}
+    <div className="relative min-h-screen overflow-x-hidden">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[520px] overflow-hidden">
+        <div className="aurora" />
+      </div>
+
+      <div className="relative px-5 pt-24 pb-24 sm:px-8 lg:pt-28">
+        {pageData.type === 'publication' && (
+          <PublicationsList config={pageData.config} publications={pageData.publications} />
+        )}
+        {pageData.type === 'text' && (
+          <div className="mx-auto max-w-3xl">
+            <TextPage config={pageData.config} content={pageData.content} />
+          </div>
+        )}
+        {pageData.type === 'card' && <CardPage config={pageData.config} />}
+      </div>
     </div>
   );
 }

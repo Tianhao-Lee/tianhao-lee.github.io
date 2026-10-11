@@ -17,25 +17,23 @@ export default function News({ items, title }: NewsProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.news;
 
-    if (items.length === 0) {
-        return null;
-    }
+    if (items.length === 0) return null;
 
     return (
         <motion.section
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.18, ease: [0.32, 0.72, 0, 1] }}
         >
-            <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
-            <div className="space-y-3">
+            <h2 className="display mb-5 text-2xl text-primary">{resolvedTitle}</h2>
+            <ul className="max-w-[44rem] divide-y divide-[color:var(--hairline)] border-y border-hairline">
                 {items.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                        <span className="text-xs text-neutral-500 mt-1 w-16 flex-shrink-0">{item.date}</span>
-                        <p className="text-sm text-neutral-700">{item.content}</p>
-                    </div>
+                    <li key={index} className="flex gap-5 py-3.5">
+                        <span className="w-24 shrink-0 pt-0.5 text-xs tabular-nums text-neutral-400">{item.date}</span>
+                        <p className="text-[15px] leading-relaxed text-neutral-700">{item.content}</p>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </motion.section>
     );
 }
