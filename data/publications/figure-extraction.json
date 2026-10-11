@@ -208,6 +208,22 @@
       "width": 2000,
       "height": 786,
       "bytes": 160722
+    },
+    {
+      "id": "review",
+      "pdf": "Li 等 - 2025 - An overview of computational methods in single-cell transcriptomic cell type annotation.pdf",
+      "page": 5,
+      "figure": 3,
+      "pdfBounds": [
+        54.537,
+        164.488,
+        546.281,
+        470
+      ],
+      "output": "review-figure3.webp",
+      "width": 2000,
+      "height": 1243,
+      "bytes": 162096
     }
   ]
 }

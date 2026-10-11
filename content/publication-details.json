@@ -182,8 +182,8 @@
       "abstract": "The rapid accumulation of single-cell RNA sequencing data has provided unprecedented computational resources for cell type annotation. This review systematically examines annotation approaches based on transcriptomics-specific gene expression profiles and provides a comparison and categorization of these methods. It focuses on major challenges in annotation, especially the long-tail distribution problem arising from rare cell types, and discusses deep learning techniques for recognizing novel cell types within an open-world framework.",
       "figure": {
         "src": "/papers/local-figures/review-figure3.webp",
-        "width": 666,
-        "height": 410,
+        "width": 2000,
+        "height": 1243,
         "alt": "Flowchart comparing single-cell annotation method families",
         "caption": "Figure 3. Flowchart of single-cell type annotation methods.",
         "credit": "Li et al., Briefings in Bioinformatics 2025, Figure 3",

@@ -30,6 +30,7 @@ const PAPERS = [
   ["scbrf", "Zhang 等 - 2027 - A gene signature-guided bidirectional retrieval framework for single-cell RNA-seq analysis.pdf", 5, 2, "scbrf-figure2.webp"],
   ["clsfdti", "Zhang 等 - 2026 - Contrastive learning in both structure and function spaces improve drug-target interaction predictio.pdf", 4, 2, "clsfdti-figure2.webp"],
   ["comet", "IJCNN-26-CameraReady.pdf", 3, 1, "comet-figure1.webp"],
+  ["review", "Li 等 - 2025 - An overview of computational methods in single-cell transcriptomic cell type annotation.pdf", 5, 3, "review-figure3.webp"],
 ];
 
 const rect = (x0, y0, x1, y1) => ({ x0, y0, x1, y1 });
@@ -67,12 +68,22 @@ function dominantCluster(rects, gap) {
 }
 
 function captionRect(page, figureNumber) {
-  const pattern = new RegExp(`Fig\\.?\\s*${figureNumber}(?:\\.|\\s)`, "i");
   const { blocks } = JSON.parse(page.toStructuredText("preserve-whitespace").asJSON());
-  for (const block of blocks) {
-    if (block.type !== "text") continue;
-    const text = (block.lines || []).map((line) => line.text).join(" ");
-    if (pattern.test(text)) return fromXYWH(block.bbox);
+  const texts = blocks
+    .filter((block) => block.type === "text")
+    .map((block) => ({
+      rect: fromXYWH(block.bbox),
+      text: (block.lines || []).map((line) => line.text).join(" "),
+    }));
+
+  // "Fig. 3" is the common form; "Figure 3." is the fallback. Trying them in
+  // order matters when the body text cites the figure above its caption.
+  for (const pattern of [
+    new RegExp(`Fig\\.?\\s*${figureNumber}(?:\\.|\\s|$)`, "i"),
+    new RegExp(`Fig(?:ure)?\\.?\\s*${figureNumber}(?:\\.|\\s|$)`, "i"),
+  ]) {
+    const hit = texts.find((block) => pattern.test(block.text));
+    if (hit) return hit.rect;
   }
   throw new Error(`Figure ${figureNumber} caption not found`);
 }
