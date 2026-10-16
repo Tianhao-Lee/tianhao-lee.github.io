@@ -46,6 +46,7 @@ Guided students: **Sihan He** — M.Sc. in Computer Science, University of Elect
 - **COMET: Learning Class-Consistent Metacell Prototypes via Quantization for Few-Shot Single-Cell Annotation** — guided work with an undergraduate at Sichuan University (2025.11 – 2026.01); accepted to IEEE IJCNN 2026
 - **Distribution and Knowledge Alignment-Based Single-Cell Multi-Omics Cell Type Annotation** — guided work; IEEE IJCNN 2025
 - **Deep Generative Framework for Modeling Single-Cell Drug Perturbation Response** — guided work; Neural Networks, 2026
+- **Cross-Modal Semantic Alignment for Cold-Start Drug-Target Interaction Prediction** — guided work; Journal of Chemical Information and Modeling, 2026
 - **A Gene Signature-Guided Bidirectional Retrieval Framework for Single-Cell RNA-seq Analysis** — guided work; Neurocomputing, 2027
 
 ## Honors and Awards

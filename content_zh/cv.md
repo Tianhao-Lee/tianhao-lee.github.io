@@ -46,6 +46,7 @@
 - **COMET: Learning Class-Consistent Metacell Prototypes via Quantization for Few-Shot Single-Cell Annotation** — 与四川大学本科生合作指导（2025.11 – 2026.01），已被 IEEE IJCNN 2026 接收
 - **Distribution and Knowledge Alignment-Based Single-Cell Multi-Omics Cell Type Annotation** — 指导工作，IEEE IJCNN 2025
 - **Deep Generative Framework for Modeling Single-Cell Drug Perturbation Response** — 指导工作，Neural Networks，2026
+- **Cross-Modal Semantic Alignment for Cold-Start Drug-Target Interaction Prediction** — 指导工作，Journal of Chemical Information and Modeling，2026
 - **A Gene Signature-Guided Bidirectional Retrieval Framework for Single-Cell RNA-seq Analysis** — 指导工作，Neurocomputing，2027
 
 ## 个人荣誉
