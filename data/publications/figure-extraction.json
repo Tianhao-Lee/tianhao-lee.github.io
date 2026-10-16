@@ -210,6 +210,22 @@
       "bytes": 160722
     },
     {
+      "id": "cmadti",
+      "pdf": "He 等 - 2026 - Cross-Modal SemanticAlignment for Cold-Start Drug–TargetInteraction Prediction.pdf",
+      "page": 3,
+      "figure": 1,
+      "pdfBounds": [
+        51.477,
+        60.435,
+        555.477,
+        330.835
+      ],
+      "output": "cmadti-figure1.webp",
+      "width": 2000,
+      "height": 1073,
+      "bytes": 154820
+    },
+    {
       "id": "review",
       "pdf": "Li 等 - 2025 - An overview of computational methods in single-cell transcriptomic cell type annotation.pdf",
       "page": 5,

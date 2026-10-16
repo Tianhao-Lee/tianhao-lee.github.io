@@ -30,6 +30,7 @@ const PAPERS = [
   ["scbrf", "Zhang 等 - 2027 - A gene signature-guided bidirectional retrieval framework for single-cell RNA-seq analysis.pdf", 5, 2, "scbrf-figure2.webp"],
   ["clsfdti", "Zhang 等 - 2026 - Contrastive learning in both structure and function spaces improve drug-target interaction predictio.pdf", 4, 2, "clsfdti-figure2.webp"],
   ["comet", "IJCNN-26-CameraReady.pdf", 3, 1, "comet-figure1.webp"],
+  ["cmadti", "He 等 - 2026 - Cross-Modal SemanticAlignment for Cold-Start Drug–TargetInteraction Prediction.pdf", 3, 1, "cmadti-figure1.webp"],
   ["review", "Li 等 - 2025 - An overview of computational methods in single-cell transcriptomic cell type annotation.pdf", 5, 3, "review-figure3.webp"],
 ];
 
@@ -114,10 +115,39 @@ function imageBounds(ctm) {
   return rect(Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys));
 }
 
-function figureBounds(page, figureNumber) {
+// Publisher running heads live in the page's top margin and repeat on every
+// page. A flattened figure image can extend behind one, so the crop has to stop
+// below the head instead of printing the journal name at the top of the figure.
+function runningHeadBottom(doc, pageHeight) {
+  const band = pageHeight * 0.08;
+  const seen = new Map();
+
+  for (let index = 0; index < doc.countPages(); index += 1) {
+    const { blocks } = JSON.parse(doc.loadPage(index).toStructuredText("preserve-whitespace").asJSON());
+    for (const block of blocks) {
+      if (block.type !== "text") continue;
+      const bottom = block.bbox.y + block.bbox.h;
+      if (block.bbox.y < 12 || bottom > band) continue;
+      if (block.bbox.w < 300 || block.bbox.h > 25) continue;
+      const key = (block.lines || []).map((line) => line.text).join(" ")
+        .replace(/\s+/g, " ").trim().toLowerCase();
+      if (key.length < 8) continue;
+      const record = seen.get(key) || { pages: new Set(), bottom: 0 };
+      record.pages.add(index);
+      record.bottom = Math.max(record.bottom, bottom);
+      seen.set(key, record);
+    }
+  }
+
+  return [...seen.values()]
+    .filter((record) => record.pages.size >= 3)
+    .reduce((lowest, record) => Math.max(lowest, record.bottom), 0);
+}
+
+function figureBounds(page, figureNumber, headBottom = 0) {
   const pageRect = fromBounds(page.getBounds());
   const caption = captionRect(page, figureNumber);
-  const top = Math.max(12, pageRect.y1 * 0.035);
+  const top = Math.max(12, pageRect.y1 * 0.035, headBottom > 0 ? headBottom + 1 : 0);
   const bottom = caption.y0 - 2;
   const inBand = (r) => r.y0 >= top && r.y1 <= bottom + 2 && area(r) > 4;
 
@@ -152,7 +182,8 @@ async function main() {
   for (const [id, filename, pageNumber, figureNumber, outputName] of PAPERS) {
     const doc = mupdf.Document.openDocument(fs.readFileSync(path.join(PDF_DIR, filename)), "application/pdf");
     const page = doc.loadPage(pageNumber - 1);
-    const bounds = figureBounds(page, figureNumber);
+    const headBottom = runningHeadBottom(doc, fromBounds(doc.loadPage(0).getBounds()).y1);
+    const bounds = figureBounds(page, figureNumber, headBottom);
 
     // Render at whatever scale fills MAX_WIDTH, so narrow figures are not
     // stuck at a lower pixel count than wide ones.

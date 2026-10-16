@@ -323,6 +323,46 @@
       }
     },
     {
+      "id": "he2026crossmodal",
+      "doi": "10.1021/acs.jcim.6c01975",
+      "slug": "cma-dti-cold-start-drug-target-2026",
+      "summary": "A cross-modal semantic alignment framework that predicts drug-target interactions for drugs or targets unseen during training.",
+      "contentBasis": "full-text",
+      "motivation": "Deep learning models for drug-target interaction prediction depend on known interaction records, so they generalize poorly when a drug or a target is unseen at training time. Chemical and biological representations are also not naturally aligned, which limits semantic transfer between molecular structures and protein sequences.",
+      "method": "CMA-DTI encodes drugs and proteins with pretrained sequence models and refines both with a dual-channel encoder: hybrid convolutional units capture local functional patterns while dynamic self-attention captures global contextual dependencies. A bidirectional cross-modal alignment module then models interactions between drug functional groups and protein binding regions.",
+      "contributions": [
+        "Aligns chemical and biological representations through a bidirectional cross-modal module between drug functional groups and protein binding regions.",
+        "Combines local convolutional and global self-attention channels to encode drug and protein features.",
+        "Keeps warm-start performance competitive while improving generalization in target cold-start and blind-start scenarios."
+      ],
+      "results": "Experiments on four benchmark data sets show competitive warm-start performance and the best results in the target cold-start and blind-start scenarios. On BindingDB, CMA-DTI reaches an AUC-ROC of 0.734 +/- 0.003 under target cold-start and 0.784 +/- 0.010 AUC-ROC with 0.700 +/- 0.007 AUC-PR under blind start, improving on the second-best method by 4.9% and 9.8%, respectively. Ablation studies and residue-level visualizations support the contribution of the proposed modules.",
+      "abstract": "Drug-target interaction (DTI) prediction is essential for drug discovery, yet existing models often suffer from limited generalization when drugs or targets are unseen during training. This challenge is particularly severe in cold-start settings, where interaction records are unavailable for novel entities and effective semantic transfer between chemical and biological spaces is required. To address this problem, we propose CMA-DTI, a cross-modal semantic alignment framework for cold-start drug-target interaction prediction. CMA-DTI first extracts drug and protein representations from pretrained sequence models, and then it uses a dual-channel encoder to capture local functional patterns and global contextual dependencies. A bidirectional cross-modal alignment module is further introduced to model interactions between drug functional groups and protein binding regions, enabling fine-grained semantic transfer across heterogeneous modalities. Experiments on four benchmark data sets show that CMA-DTI achieves competitive performance in warm-start settings and improves generalization in challenging target cold-start and blind-start scenarios. Ablation studies and structural visualizations further support the contribution of the proposed modules and suggest residue-level interpretability for protein-ligand binding analysis.",
+      "figure": {
+        "src": "/papers/local-figures/cmadti-figure1.webp",
+        "width": 2000,
+        "height": 1073,
+        "alt": "Overview of the CMA-DTI cross-modal semantic alignment framework",
+        "caption": "Figure 1. Overview of CMA-DTI.",
+        "credit": "He et al., Journal of Chemical Information and Modeling 2026, Figure 1",
+        "sourceUrl": "https://doi.org/10.1021/acs.jcim.6c01975",
+        "license": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment"
+      },
+      "links": {
+        "pdf": null,
+        "code": "https://github.com/ZhangLab312/CMA-DTI"
+      },
+      "audit": {
+        "pdfAcquired": true,
+        "imageAcquired": true,
+        "imageFigure": "Figure 1",
+        "imagePermission": "Author-provided local manuscript; publisher reuse should be confirmed before public deployment",
+        "evidence": "Author-provided PDF; abstract, method, results, and figure caption checked",
+        "missing": [
+          "Publisher reuse confirmation before public deployment"
+        ]
+      }
+    },
+    {
       "id": "he2026leap",
       "doi": "10.1016/j.compbiolchem.2025.108850",
       "slug": "leap-enhancer-activity-2026",
