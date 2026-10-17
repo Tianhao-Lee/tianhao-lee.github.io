@@ -1,0 +1,53 @@
+# Journal Citation Reports metrics for the journals in publications.bib.
+#
+# Values come from the June 2026 JCR release (2025 journal impact factors),
+# cross-checked against publisher pages where they are public.
+# `name` must match the journal name exactly as written in publications.bib;
+# entries without a match are ignored, and papers without metrics stay clean.
+
+year = 2025
+
+[[journal]]
+name = "Briefings in Bioinformatics"
+impact_factor = 7.3
+impact_factor_5y = 8.1
+
+[[journal]]
+name = "Methods"
+impact_factor = 3.6
+impact_factor_5y = 4.6
+
+[[journal]]
+name = "Applied Soft Computing"
+impact_factor = 7.8
+impact_factor_5y = 7.4
+
+[[journal]]
+name = "BMC Bioinformatics"
+impact_factor = 4.4
+impact_factor_5y = 4.0
+
+[[journal]]
+name = "Journal of Chemical Information and Modeling"
+impact_factor = 6.4
+impact_factor_5y = 6.9
+
+[[journal]]
+name = "Computational Biology and Chemistry"
+impact_factor = 3.4
+impact_factor_5y = 3.0
+
+[[journal]]
+name = "IEEE Transactions on Computational Biology and Bioinformatics"
+impact_factor = 4.1
+impact_factor_5y = 3.5
+
+[[journal]]
+name = "Neural Networks"
+impact_factor = 7.2
+impact_factor_5y = 7.4
+
+[[journal]]
+name = "Neurocomputing"
+impact_factor = 6.7
+impact_factor_5y = 6.4

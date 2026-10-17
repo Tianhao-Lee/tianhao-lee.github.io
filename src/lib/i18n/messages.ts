@@ -45,6 +45,8 @@ export interface LocaleMessages {
     reset: string;
     allYears: string;
     allTypes: string;
+    impactFactor: string;
+    impactFactor5y: string;
     authorRoles: {
       first: string;
       coFirst: string;
@@ -133,6 +135,8 @@ const en: LocaleMessages = {
     reset: 'Reset',
     allYears: 'All years',
     allTypes: 'All types',
+    impactFactor: 'Impact Factor',
+    impactFactor5y: '5-Year Impact Factor',
     authorRoles: {
       first: 'First author',
       coFirst: 'Co-first author',
@@ -221,6 +225,8 @@ const zh: LocaleMessages = {
     reset: '清除筛选',
     allYears: '全部年份',
     allTypes: '全部类型',
+    impactFactor: '影响因子',
+    impactFactor5y: '五年影响因子',
     authorRoles: {
       first: '第一作者',
       coFirst: '共同一作',

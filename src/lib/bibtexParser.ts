@@ -2,6 +2,7 @@ import { AuthorRole, Publication, PublicationType, ResearchArea } from '@/types/
 import { getConfig } from './config';
 import { getRuntimeI18nConfig } from './i18n/config';
 import { parseBibTeXInline } from './bibtexInline';
+import { getJournalMetrics } from './journalMetrics';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const bibtexParse = require('bibtex-parse-js');
@@ -119,6 +120,18 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       // Store original BibTeX (excluding custom fields)
       bibtex: reconstructBibTeX(entry, ['selected', 'selected_order', 'slug', 'preview', 'description', 'keywords', 'code', 'pdf', 'pdf_url', 'role', 'ranks']),
     };
+
+    // Attach journal-level metrics (JCR impact factors) when configured.
+    const journalMetrics = getJournalMetrics(publication.journal);
+    if (journalMetrics) {
+      if (journalMetrics.impactFactor !== undefined) {
+        publication.impactFactor = journalMetrics.impactFactor;
+      }
+      if (journalMetrics.impactFactor5y !== undefined) {
+        publication.impactFactor5y = journalMetrics.impactFactor5y;
+      }
+      publication.impactFactorYear = journalMetrics.year;
+    }
 
     // Clean up undefined fields
     Object.keys(publication).forEach(key => {

@@ -50,6 +50,8 @@ export interface Publication {
   status: PublicationStatus;
   citations?: number;
   impactFactor?: number;
+  impactFactor5y?: number;
+  impactFactorYear?: number;
   quartile?: 'Q1' | 'Q2' | 'Q3' | 'Q4';
   authorRole?: AuthorRole;
   ranks?: string[];
