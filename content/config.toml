@@ -5,6 +5,11 @@ favicon = "/favicon.svg"
 url = "https://tianhao-lee.github.io"
 last_updated = "October 17, 2026"
 
+[analytics]
+# GoatCounter site code: the subdomain of https://<code>.goatcounter.com.
+# Leave empty to disable analytics and the visitor counter entirely.
+goatcounter = "tianhao-lee"
+
 [author]
 name = "Tianhao Li"
 title = "AI for Computational Biology"

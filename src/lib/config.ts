@@ -32,6 +32,9 @@ export interface SiteConfig {
     enable_likes: boolean;
     enable_one_page_mode?: boolean;
   };
+  analytics?: {
+    goatcounter?: string;
+  };
   navigation: Array<{
     title: string;
     type: 'section' | 'page' | 'link';
@@ -85,6 +88,7 @@ function mergeConfig(base: SiteConfig, localized?: Partial<SiteConfig> | null): 
       ...(localized.social || {}),
     },
     features: base.features,
+    analytics: base.analytics,
     navigation: localized.navigation || base.navigation,
     sections: localized.sections || base.sections,
     // i18n is always sourced from default content/config.toml

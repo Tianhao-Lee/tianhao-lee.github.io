@@ -82,6 +82,7 @@ export interface LocaleMessages {
   };
   footer: {
     lastUpdated: string;
+    totalViews: string;
   };
 }
 
@@ -169,6 +170,7 @@ const en: LocaleMessages = {
   },
   footer: {
     lastUpdated: 'Last updated',
+    totalViews: 'Total Views',
   },
 };
 
@@ -256,6 +258,7 @@ const zh: LocaleMessages = {
   },
   footer: {
     lastUpdated: '最近更新',
+    totalViews: '总访问量',
   },
 };
 

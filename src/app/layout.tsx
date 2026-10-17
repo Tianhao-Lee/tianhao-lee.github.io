@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
+import GoatCounterTracker from '@/components/analytics/GoatCounterTracker';
 import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import { LocaleProvider } from '@/components/ui/LocaleProvider';
 import { getConfig } from '@/lib/config';
+import { getGoatCounterSiteCode } from '@/lib/analytics';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 import type { SiteConfig } from '@/lib/config';
 
@@ -123,6 +125,7 @@ export default function RootLayout({
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const targetLocales = runtimeI18n.enabled ? runtimeI18n.locales : [runtimeI18n.defaultLocale];
+  const goatcounterSiteCode = getGoatCounterSiteCode(config);
 
   const {
     navigationByLocale,
@@ -180,7 +183,9 @@ export default function RootLayout({
               lastUpdated={config.site.last_updated}
               lastUpdatedByLocale={lastUpdatedByLocale}
               defaultLocale={runtimeI18n.defaultLocale}
+              goatcounterSiteCode={goatcounterSiteCode}
             />
+            {goatcounterSiteCode ? <GoatCounterTracker siteCode={goatcounterSiteCode} /> : null}
           </LocaleProvider>
         </ThemeProvider>
       </body>
